@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+
+<html class="light" lang="uz"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Biznes va tadbirkorlik Oliy maktabi - O'quv Rejasi</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;family=Public+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container": "#e5eeff",
+                    "outline": "#72777e",
+                    "on-error-container": "#93000a",
+                    "on-primary-fixed-variant": "#1f4a6c",
+                    "inverse-on-surface": "#eaf1ff",
+                    "on-secondary-container": "#00714d",
+                    "primary-container": "#0b3c5d",
+                    "outline-variant": "#c2c7ce",
+                    "on-tertiary-fixed-variant": "#653e00",
+                    "surface-bright": "#f8f9ff",
+                    "on-tertiary-container": "#e39100",
+                    "primary-fixed-dim": "#a3cbf2",
+                    "primary": "#00263f",
+                    "surface-container-lowest": "#ffffff",
+                    "surface": "#f8f9ff",
+                    "secondary": "#006c49",
+                    "surface-variant": "#d3e4fe",
+                    "secondary-container": "#6cf8bb",
+                    "on-primary-fixed": "#001d32",
+                    "on-secondary-fixed": "#002113",
+                    "on-primary-container": "#7fa7cd",
+                    "secondary-fixed-dim": "#4edea3",
+                    "on-secondary-fixed-variant": "#005236",
+                    "surface-container-high": "#dce9ff",
+                    "on-error": "#ffffff",
+                    "on-background": "#0b1c30",
+                    "tertiary-fixed": "#ffddb8",
+                    "on-primary": "#ffffff",
+                    "surface-tint": "#396285",
+                    "inverse-surface": "#213145",
+                    "error": "#ba1a1a",
+                    "error-container": "#ffdad6",
+                    "surface-container-highest": "#d3e4fe",
+                    "tertiary-container": "#533200",
+                    "primary-fixed": "#cee5ff",
+                    "background": "#f8f9ff",
+                    "inverse-primary": "#a3cbf2",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "surface-container-low": "#eff4ff",
+                    "on-surface-variant": "#42474e",
+                    "surface-dim": "#cbdbf5",
+                    "tertiary": "#361f00",
+                    "on-tertiary-fixed": "#2a1700",
+                    "tertiary-fixed-dim": "#ffb95f",
+                    "on-surface": "#0b1c30",
+                    "secondary-fixed": "#6ffbbe"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "sm": "8px",
+                    "md": "16px",
+                    "2xl": "48px",
+                    "gutter": "24px",
+                    "3xl": "64px",
+                    "xs": "4px",
+                    "lg": "24px",
+                    "container-max": "1280px",
+                    "base": "4px",
+                    "xl": "32px"
+            },
+            "fontFamily": {
+                    "headline-sm": ["Poppins"],
+                    "caption": ["Inter"],
+                    "title-lg": ["Poppins"],
+                    "display-lg-mobile": ["Poppins"],
+                    "body-md": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "label-md": ["Inter"],
+                    "headline-md": ["Poppins"],
+                    "display-lg": ["Poppins"]
+            },
+            "fontSize": {
+                    "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "caption": ["12px", {"lineHeight": "1.4", "fontWeight": "400"}],
+                    "title-lg": ["20px", {"lineHeight": "1.5", "fontWeight": "500"}],
+                    "display-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "headline-md": ["30px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8f9ff; }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .step-active { color: #006c49; }
+        .custom-scrollbar::-webkit-scrollbar { width: 6px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: #c2c7ce; border-radius: 10px; }
+    </style>
+</head>
+<body class="bg-background text-on-background">
+<!-- Top Navigation Bar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-sm">
+<div class="flex justify-between items-center w-full px-lg py-sm max-w-container-max mx-auto">
+<div class="flex items-center gap-4">
+<img alt="Biznes va tadbirkorlik Oliy maktabi Logo" class="h-10 w-auto" src="https://lh3.googleusercontent.com/aida/AP1WRLtW9fvuQ2g2G5bSjMiNkwxdEmQoPFkyTyOEp9AxH12mT-3SZoRPAXUdoB7CQulza5z5y52MGWdEK-yA2tYsTWpPWE4l-3KuTodXrkKSQ24HX42xcG9tnf5lkc98iqDZDdx9O4N55LoCevuhgHh2qmz5IMpHTOCTlXRwU3C7UCKOUKBjDflzsw0noMFpFMi41ZCEZJa-CCZFeq0F4BsYhaXHobNUo7wdUIlHpx43gWknJ4T2Q3FFsaR_OPbC"/>
+<span class="text-title-lg font-title-lg font-bold text-primary">Business English Pro</span>
+</div>
+<nav class="hidden md:flex items-center gap-xl">
+<a class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-200" href="#">Dashboard</a>
+<a class="text-primary font-bold border-b-2 border-secondary pb-1" href="#">Curriculum</a>
+<a class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-200" href="#">Live Sessions</a>
+</nav>
+<div class="flex items-center gap-md">
+<div class="flex gap-sm">
+<button class="p-2 text-on-surface-variant hover:bg-surface-container-high rounded-full transition-all duration-300">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<button class="p-2 text-on-surface-variant hover:bg-surface-container-high rounded-full transition-all duration-300">
+<span class="material-symbols-outlined">settings</span>
+</button>
+</div>
+<div class="h-10 w-10 rounded-full overflow-hidden border-2 border-outline-variant">
+<img class="w-full h-full object-cover" data-alt="A professional headshot of a business executive student in a tailored suit, looking confident and smiling slightly. The background is a blurred high-end office environment with soft natural lighting coming from large windows. The style is crisp, high-resolution corporate photography with a clean and bright aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSSLYkQUBxVximqS8PINNK8sSEEbudd8ItDyJPPHSTTRswCJ2PpenJHvQb4k19lomZq_VGGMBHShebw8P3KpDWu0orhYj6ZZ2i6NeJ7ql4HhauoN_rAjv7lU2NsZN_zLnU0nTT5rWTk5iKXKsJ8a1DckM8wrZjd6PCtT707-BtVdMorcuK0DLpPs_uzNdqnACtigBxDD1uzzOWnAPTQkDAL27B9psAItKDzaeaOIgXL1cUwuKR5KzRhA"/>
+</div>
+</div>
+</div>
+</header>
+<div class="flex pt-[72px] min-h-screen">
+<!-- Sidebar Navigation -->
+<aside class="fixed left-0 top-[72px] h-[calc(100vh-72px)] w-64 bg-surface-container-low/90 backdrop-blur-xl border-r border-outline-variant hidden lg:flex flex-col py-xl px-md z-40">
+<div class="mb-lg px-md">
+<h3 class="text-headline-sm font-headline-sm text-primary">Executive Suite</h3>
+<p class="text-label-md text-on-surface-variant">C1 Advanced Level</p>
+</div>
+<nav class="flex-1 space-y-sm">
+<a class="bg-secondary-container text-on-secondary-container rounded-lg p-3 flex items-center gap-3 transition-all duration-300" href="#">
+<span class="material-symbols-outlined">school</span>
+<span class="font-label-md text-label-md">My Learning</span>
+</a>
+<a class="text-on-surface-variant p-3 flex items-center gap-3 hover:bg-surface-container-high rounded-lg transition-all duration-300" href="#">
+<span class="material-symbols-outlined">terminal</span>
+<span class="font-label-md text-label-md">Grammar Lab</span>
+</a>
+<a class="text-on-surface-variant p-3 flex items-center gap-3 hover:bg-surface-container-high rounded-lg transition-all duration-300" href="#">
+<span class="material-symbols-outlined">translate</span>
+<span class="font-label-md text-label-md">Vocabulary</span>
+</a>
+<a class="text-on-surface-variant p-3 flex items-center gap-3 hover:bg-surface-container-high rounded-lg transition-all duration-300" href="#">
+<span class="material-symbols-outlined">smart_toy</span>
+<span class="font-label-md text-label-md">AI Tutor</span>
+</a>
+<a class="text-on-surface-variant p-3 flex items-center gap-3 hover:bg-surface-container-high rounded-lg transition-all duration-300" href="#">
+<span class="material-symbols-outlined">folder_open</span>
+<span class="font-label-md text-label-md">Resources</span>
+</a>
+</nav>
+<div class="mt-auto space-y-sm pt-lg border-t border-outline-variant">
+<button class="w-full bg-primary text-on-primary py-sm rounded-lg font-label-md hover:bg-primary-container transition-colors">
+                    Schedule Assessment
+                </button>
+<a class="text-on-surface-variant p-2 flex items-center gap-3 text-caption hover:text-primary" href="#">
+<span class="material-symbols-outlined text-sm">help</span>
+                    Support
+                </a>
+<a class="text-on-surface-variant p-2 flex items-center gap-3 text-caption hover:text-error" href="#">
+<span class="material-symbols-outlined text-sm">logout</span>
+                    Sign Out
+                </a>
+</div>
+</aside>
+<!-- Main Content Area -->
+<main class="flex-1 lg:ml-64 p-lg md:p-xl flex flex-col gap-lg">
+<!-- Header Section -->
+<section class="flex flex-col md:flex-row justify-between items-start md:items-center gap-md">
+<div>
+<h1 class="font-headline-md text-headline-md text-primary">Biznes Mavzulari va O'quv Rejasi</h1>
+<p class="text-body-md text-on-surface-variant max-w-2xl">Muvaffaqiyatli korporativ muloqot uchun zarur bo'lgan strategik bilimlar va amaliy ko'nikmalar majmuasi.</p>
+</div>
+<div class="flex items-center gap-sm bg-surface-container p-sm rounded-xl">
+<span class="material-symbols-outlined text-secondary">trending_up</span>
+<span class="font-label-md text-label-md text-secondary">Umumiy progress: 42%</span>
+</div>
+</section>
+<!-- Topics Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-lg">
+<!-- Topic Card Generator (Placeholder for 20 items logic) -->
+<!-- Item 1: Strategic Management -->
+<div class="glass-panel rounded-2xl p-lg shadow-sm hover:shadow-md transition-all duration-300 group">
+<div class="flex justify-between items-start mb-md">
+<div class="p-3 bg-primary-container/10 rounded-xl">
+<span class="material-symbols-outlined text-primary">insights</span>
+</div>
+<span class="text-caption px-2 py-1 bg-secondary-container text-on-secondary-container rounded-full">Completed</span>
+</div>
+<h3 class="text-title-lg font-bold text-primary mb-sm">Strategic Management</h3>
+<p class="text-caption text-on-surface-variant mb-md">Strategik tahlil va qaror qabul qilish jarayonlari.</p>
+<div class="space-y-sm">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="text-label-md text-on-surface">1. Lug'at va Grammatika</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="text-label-md text-on-surface">2. Ko'nikma modullari (R, L, W, S)</span>
+</div>
+</div>
+<button class="mt-lg w-full py-2 bg-secondary text-on-primary rounded-lg font-label-md opacity-0 group-hover:opacity-100 transition-opacity">Review Session</button>
+</div>
+<!-- Item 2: Corporate Finance -->
+<div class="glass-panel rounded-2xl p-lg shadow-sm hover:shadow-md transition-all duration-300 group border-l-4 border-primary">
+<div class="flex justify-between items-start mb-md">
+<div class="p-3 bg-primary-container/10 rounded-xl">
+<span class="material-symbols-outlined text-primary">payments</span>
+</div>
+<span class="text-caption px-2 py-1 bg-surface-container-highest text-on-surface-variant rounded-full">In Progress</span>
+</div>
+<h3 class="text-title-lg font-bold text-primary mb-sm">Corporate Finance</h3>
+<p class="text-caption text-on-surface-variant mb-md">Investitsiyalar va moliyaviy barqarorlikni boshqarish.</p>
+<div class="space-y-sm">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="text-label-md text-on-surface">1. Lug'at va Grammatika</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-outline text-[20px]">radio_button_unchecked</span>
+<span class="text-label-md text-on-surface-variant">2. Ko'nikma modullari (R, L, W, S)</span>
+</div>
+</div>
+<button class="mt-lg w-full py-2 bg-primary text-on-primary rounded-lg font-label-md">Continue Learning</button>
+</div>
+<!-- Item 3: International Marketing -->
+<div class="glass-panel rounded-2xl p-lg shadow-sm hover:shadow-md transition-all duration-300 group">
+<div class="flex justify-between items-start mb-md">
+<div class="p-3 bg-primary-container/10 rounded-xl">
+<span class="material-symbols-outlined text-primary">public</span>
+</div>
+<span class="text-caption px-2 py-1 bg-surface-container-low text-on-surface-variant rounded-full">Locked</span>
+</div>
+<h3 class="text-title-lg font-bold text-primary mb-sm">International Marketing</h3>
+<p class="text-caption text-on-surface-variant mb-md">Global bozorlarga kirish va brending strategiyalari.</p>
+<div class="space-y-sm opacity-50">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-outline text-[20px]">lock</span>
+<span class="text-label-md text-on-surface">1. Lug'at va Grammatika</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-outline text-[20px]">lock</span>
+<span class="text-label-md text-on-surface">2. Ko'nikma modullari (R, L, W, S)</span>
+</div>
+</div>
+</div>
+<!-- Item 4: Mergers & Acquisitions -->
+<div class="glass-panel rounded-2xl p-lg shadow-sm hover:shadow-md transition-all duration-300">
+<div class="flex justify-between items-start mb-md">
+<div class="p-3 bg-primary-container/10 rounded-xl"><span class="material-symbols-outlined text-primary">handshake</span></div>
+</div>
+<h3 class="text-title-lg font-bold text-primary mb-sm">Mergers &amp; Acquisitions</h3>
+<p class="text-caption text-on-surface-variant mb-md">Kompaniyalarni birlashtirish va sotib olish jarayonlari.</p>
+<div class="space-y-sm opacity-50">
+<div class="flex items-center gap-3"><span class="material-symbols-outlined text-outline text-[20px]">lock</span><span class="text-label-md text-on-surface">1. Lug'at va Grammatika</span></div>
+</div>
+</div>
+<!-- Item 5: Supply Chain Ethics -->
+<div class="glass-panel rounded-2xl p-lg shadow-sm hover:shadow-md transition-all duration-300">
+<div class="flex justify-between items-start mb-md">
+<div class="p-3 bg-primary-container/10 rounded-xl"><span class="material-symbols-outlined text-primary">local_shipping</span></div>
+</div>
+<h3 class="text-title-lg font-bold text-primary mb-sm">Supply Chain Ethics</h3>
+<p class="text-caption text-on-surface-variant mb-md">Ta'minot zanjirida axloqiy me'yorlar va barqarorlik.</p>
+<div class="space-y-sm opacity-50">
+<div class="flex items-center gap-3"><span class="material-symbols-outlined text-outline text-[20px]">lock</span><span class="text-label-md text-on-surface">1. Lug'at va Grammatika</span></div>
+</div>
+</div>
+<!-- Additional Topics (Simulated list) -->
+<div class="glass-panel rounded-2xl p-lg shadow-sm hover:shadow-md transition-all duration-300">
+<div class="flex justify-between items-start mb-md">
+<div class="p-3 bg-primary-container/10 rounded-xl"><span class="material-symbols-outlined text-primary">psychology</span></div>
+</div>
+<h3 class="text-title-lg font-bold text-primary mb-sm">Organizational Behavior</h3>
+<p class="text-caption text-on-surface-variant mb-md">Kompaniya ichidagi inson omili va psixologiyasi.</p>
+<div class="space-y-sm opacity-50"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-outline text-[20px]">lock</span><span class="text-label-md text-on-surface">1. Lug'at</span></div></div>
+</div>
+<!-- Repeating for layout depth -->
+<div class="glass-panel rounded-2xl p-lg shadow-sm hover:shadow-md transition-all duration-300">
+<div class="flex justify-between items-start mb-md">
+<div class="p-3 bg-primary-container/10 rounded-xl"><span class="material-symbols-outlined text-primary">gavel</span></div>
+</div>
+<h3 class="text-title-lg font-bold text-primary mb-sm">Business Law &amp; Compliance</h3>
+<p class="text-caption text-on-surface-variant mb-md">Xalqaro biznes huquqi va muvofiqlik qoidalari.</p>
+<div class="space-y-sm opacity-50"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-outline text-[20px]">lock</span><span class="text-label-md text-on-surface">1. Lug'at</span></div></div>
+</div>
+<!-- Digital Transformation -->
+<div class="glass-panel rounded-2xl p-lg shadow-sm hover:shadow-md transition-all duration-300">
+<div class="flex justify-between items-start mb-md">
+<div class="p-3 bg-primary-container/10 rounded-xl"><span class="material-symbols-outlined text-primary">save_as</span></div>
+</div>
+<h3 class="text-title-lg font-bold text-primary mb-sm">Digital Transformation</h3>
+<p class="text-caption text-on-surface-variant mb-md">Raqamli texnologiyalar yordamida biznesni o'zgartirish.</p>
+<div class="space-y-sm opacity-50"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-outline text-[20px]">lock</span><span class="text-label-md text-on-surface">1. Lug'at</span></div></div>
+</div>
+<!-- Entrepreneurial Leadership -->
+<div class="glass-panel rounded-2xl p-lg shadow-sm hover:shadow-md transition-all duration-300">
+<div class="flex justify-between items-start mb-md">
+<div class="p-3 bg-primary-container/10 rounded-xl"><span class="material-symbols-outlined text-primary">groups</span></div>
+</div>
+<h3 class="text-title-lg font-bold text-primary mb-sm">Entrepreneurial Leadership</h3>
+<p class="text-caption text-on-surface-variant mb-md">Tadbirkorlik ruhidagi yetakchilik ko'nikmalari.</p>
+<div class="space-y-sm opacity-50"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-outline text-[20px]">lock</span><span class="text-label-md text-on-surface">1. Lug'at</span></div></div>
+</div>
+<!-- ... and more items to reach 20 -->
+<div class="col-span-full py-xl text-center">
+<button class="px-xl py-md bg-surface-container text-primary font-bold rounded-full hover:bg-surface-container-highest transition-colors">Barcha 20 mavzuni yuklash</button>
+</div>
+</div>
+</main>
+<!-- Right Side Progress Sidebar -->
+<aside class="w-80 hidden xl:flex flex-col p-lg border-l border-outline-variant bg-surface/50 sticky top-[72px] h-[calc(100vh-72px)] overflow-y-auto custom-scrollbar">
+<h2 class="text-title-lg font-bold text-primary mb-lg">Progress Monitoring</h2>
+<div class="space-y-lg">
+<!-- Learning Streak -->
+<div class="bg-primary-container text-on-primary-container p-md rounded-2xl shadow-sm">
+<div class="flex justify-between items-center mb-sm">
+<span class="text-label-md">Learning Streak</span>
+<span class="material-symbols-outlined text-secondary">local_fire_department</span>
+</div>
+<div class="text-headline-sm font-bold">12 Kun</div>
+<div class="mt-md h-2 w-full bg-primary/20 rounded-full overflow-hidden">
+<div class="h-full bg-secondary w-[80%]"></div>
+</div>
+<p class="text-caption mt-sm opacity-80">Daily goal: 45 min / 60 min</p>
+</div>
+<!-- Skill Breakdown -->
+<div class="glass-panel p-md rounded-2xl">
+<h3 class="text-label-md font-bold text-primary mb-md">Skills Level</h3>
+<div class="space-y-md">
+<div>
+<div class="flex justify-between text-caption mb-1">
+<span>Reading</span>
+<span>75%</span>
+</div>
+<div class="h-1.5 w-full bg-surface-container-highest rounded-full">
+<div class="h-full bg-primary w-[75%] rounded-full"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-caption mb-1">
+<span>Listening</span>
+<span>60%</span>
+</div>
+<div class="h-1.5 w-full bg-surface-container-highest rounded-full">
+<div class="h-full bg-primary w-[60%] rounded-full"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-caption mb-1">
+<span>Speaking</span>
+<span>30%</span>
+</div>
+<div class="h-1.5 w-full bg-surface-container-highest rounded-full">
+<div class="h-full bg-primary w-[30%] rounded-full"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-caption mb-1">
+<span>Writing</span>
+<span>45%</span>
+</div>
+<div class="h-1.5 w-full bg-surface-container-highest rounded-full">
+<div class="h-full bg-primary w-[45%] rounded-full"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Upcoming Live Session -->
+<div class="glass-panel p-md rounded-2xl border border-secondary/20 bg-secondary-container/10">
+<h3 class="text-label-md font-bold text-primary mb-sm">Next Live Session</h3>
+<p class="text-body-md font-semibold text-secondary">Advanced Negotiations</p>
+<p class="text-caption text-on-surface-variant">Bugun, 18:00 (O'zbekiston vaqti)</p>
+<button class="mt-md w-full py-2 bg-secondary text-white rounded-lg text-caption font-bold hover:bg-secondary-container hover:text-on-secondary-container transition-all">Join Zoom Meeting</button>
+</div>
+<!-- Certificates -->
+<div class="glass-panel p-md rounded-2xl">
+<h3 class="text-label-md font-bold text-primary mb-sm">Certificates</h3>
+<div class="flex items-center gap-3 p-2 bg-surface rounded-lg grayscale hover:grayscale-0 cursor-not-allowed">
+<span class="material-symbols-outlined text-outline">workspace_premium</span>
+<div class="flex-1">
+<p class="text-caption font-bold">Business Essentials</p>
+<p class="text-xs text-on-surface-variant">Available at 100%</p>
+</div>
+</div>
+</div>
+</div>
+</aside>
+</div>
+<!-- Mobile Bottom Navigation -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full bg-surface/90 backdrop-blur-xl border-t border-outline-variant flex justify-around py-sm z-50">
+<a class="flex flex-col items-center gap-1 text-on-surface-variant" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="text-caption">Dash</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-primary font-bold" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">menu_book</span>
+<span class="text-caption">Study</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-on-surface-variant" href="#">
+<span class="material-symbols-outlined">forum</span>
+<span class="text-caption">Live</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-on-surface-variant" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-caption">Profile</span>
+</a>
+</nav>
+<!-- Footer -->
+<footer class="w-full mt-auto bg-primary text-on-primary">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-lg py-xl max-w-container-max mx-auto gap-lg">
+<div class="flex flex-col items-center md:items-start gap-sm">
+<span class="font-title-lg text-on-primary">Business English Pro</span>
+<span class="font-caption text-caption text-on-primary/70">© 2024 Business English Pro. Enterprise Edition.</span>
+</div>
+<div class="flex flex-wrap justify-center gap-md">
+<a class="text-on-primary/70 hover:text-on-primary transition-opacity font-caption text-caption underline-offset-4 hover:underline" href="#">Privacy Policy</a>
+<a class="text-on-primary/70 hover:text-on-primary transition-opacity font-caption text-caption underline-offset-4 hover:underline" href="#">Terms of Service</a>
+<a class="text-on-primary/70 hover:text-on-primary transition-opacity font-caption text-caption underline-offset-4 hover:underline" href="#">Corporate Compliance</a>
+<a class="text-on-primary/70 hover:text-on-primary transition-opacity font-caption text-caption underline-offset-4 hover:underline" href="#">Contact Sales</a>
+</div>
+</div>
+</footer>
+<script>
+        // Micro-interaction for cards
+        document.querySelectorAll('.glass-panel').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-4px)';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+</body></html>

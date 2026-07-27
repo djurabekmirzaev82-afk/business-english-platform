@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+
+<html class="light" lang="uz"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Baholash Natijalari - Business English Pro</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;family=Public+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container": "#e5eeff",
+                    "outline": "#72777e",
+                    "on-error-container": "#93000a",
+                    "on-primary-fixed-variant": "#1f4a6c",
+                    "inverse-on-surface": "#eaf1ff",
+                    "on-secondary-container": "#00714d",
+                    "primary-container": "#0b3c5d",
+                    "outline-variant": "#c2c7ce",
+                    "on-tertiary-fixed-variant": "#653e00",
+                    "surface-bright": "#f8f9ff",
+                    "on-tertiary-container": "#e39100",
+                    "primary-fixed-dim": "#a3cbf2",
+                    "primary": "#00263f",
+                    "surface-container-lowest": "#ffffff",
+                    "surface": "#f8f9ff",
+                    "secondary": "#006c49",
+                    "surface-variant": "#d3e4fe",
+                    "secondary-container": "#6cf8bb",
+                    "on-primary-fixed": "#001d32",
+                    "on-secondary-fixed": "#002113",
+                    "on-primary-container": "#7fa7cd",
+                    "secondary-fixed-dim": "#4edea3",
+                    "on-secondary-fixed-variant": "#005236",
+                    "surface-container-high": "#dce9ff",
+                    "on-error": "#ffffff",
+                    "on-background": "#0b1c30",
+                    "tertiary-fixed": "#ffddb8",
+                    "on-primary": "#ffffff",
+                    "surface-tint": "#396285",
+                    "inverse-surface": "#213145",
+                    "error": "#ba1a1a",
+                    "error-container": "#ffdad6",
+                    "surface-container-highest": "#d3e4fe",
+                    "tertiary-container": "#533200",
+                    "primary-fixed": "#cee5ff",
+                    "background": "#f8f9ff",
+                    "inverse-primary": "#a3cbf2",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "surface-container-low": "#eff4ff",
+                    "on-surface-variant": "#42474e",
+                    "surface-dim": "#cbdbf5",
+                    "tertiary": "#361f00",
+                    "on-tertiary-fixed": "#2a1700",
+                    "tertiary-fixed-dim": "#ffb95f",
+                    "on-surface": "#0b1c30",
+                    "secondary-fixed": "#6ffbbe"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "sm": "8px",
+                    "md": "16px",
+                    "2xl": "48px",
+                    "gutter": "24px",
+                    "3xl": "64px",
+                    "xs": "4px",
+                    "lg": "24px",
+                    "container-max": "1280px",
+                    "base": "4px",
+                    "xl": "32px"
+            },
+            "fontFamily": {
+                    "headline-sm": ["Poppins"],
+                    "caption": ["Inter"],
+                    "title-lg": ["Poppins"],
+                    "display-lg-mobile": ["Poppins"],
+                    "body-md": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "label-md": ["Inter"],
+                    "headline-md": ["Poppins"],
+                    "display-lg": ["Poppins"],
+                    "public-sans": ["Public Sans"]
+            },
+            "fontSize": {
+                    "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "caption": ["12px", {"lineHeight": "1.4", "fontWeight": "400"}],
+                    "title-lg": ["20px", {"lineHeight": "1.5", "fontWeight": "500"}],
+                    "display-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "headline-md": ["30px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .progress-liquid {
+            position: relative;
+            overflow: hidden;
+        }
+        .progress-liquid::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transform: translateX(-100%);
+            animation: shimmer 2s infinite;
+        }
+        @keyframes shimmer {
+            100% { transform: translateX(100%); }
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-sm">
+<nav class="flex justify-between items-center w-full px-lg py-sm max-w-container-max mx-auto">
+<div class="flex items-center gap-md">
+<img alt="GSBE Logo" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AP1WRLtW9fvuQ2g2G5bSjMiNkwxdEmQoPFkyTyOEp9AxH12mT-3SZoRPAXUdoB7CQulza5z5y52MGWdEK-yA2tYsTWpPWE4l-3KuTodXrkKSQ24HX42xcG9tnf5lkc98iqDZDdx9O4N55LoCevuhgHh2qmz5IMpHTOCTlXRwU3C7UCKOUKBjDflzsw0noMFpFMi41ZCEZJa-CCZFeq0F4BsYhaXHobNUo7wdUIlHpx43gWknJ4T2Q3FFsaR_OPbC"/>
+<span class="text-title-lg font-title-lg font-bold text-primary">Business English Pro</span>
+</div>
+<div class="hidden md:flex items-center gap-xl">
+<a class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-200" href="#">Dashboard</a>
+<a class="text-primary font-bold border-b-2 border-secondary pb-1" href="#">Natijalar</a>
+<a class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-200" href="#">O'quv rejasi</a>
+</div>
+<div class="flex items-center gap-md">
+<button class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors">notifications</button>
+<div class="h-10 w-10 rounded-full bg-primary-container overflow-hidden border-2 border-secondary">
+<img class="w-full h-full object-cover" data-alt="Professional executive portrait of a Central Asian business student in business formal attire, soft corporate lighting, blurred office background, high resolution photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFMOBT5nO8Nv4i8WYXJq2jinQty0GY4TONjKjxU2AgXUztHIrpqE5pALLkSG57gNnoXrOniUlEOHj-IuNyr0VPEOn7RxVJ3MwojNFJCzJHQ-yBQgDp8z7RyG3ITb9o5GfKvpqHXZP_iznSFWrMjfjCgZdwv69TZThIqspqW5VXshD4bL5AunxDn6a-RJQfppgreb_3C8RZtnk1xo9timFxPwPEMLym_mpk8BT4-BPr-scrH8tLx3tJJQ"/>
+</div>
+</div>
+</nav>
+</header>
+<main class="mt-24 mb-xl px-md md:px-lg max-w-container-max mx-auto w-full flex flex-col gap-lg">
+<!-- Hero Section: Overall Score -->
+<section class="grid grid-cols-1 lg:grid-cols-3 gap-lg">
+<div class="lg:col-span-2 glass-card rounded-xl p-lg flex flex-col md:flex-row items-center gap-xl relative overflow-hidden">
+<div class="absolute top-0 right-0 p-lg opacity-10 pointer-events-none">
+<span class="material-symbols-outlined text-[120px]">workspace_premium</span>
+</div>
+<div class="relative w-48 h-48 flex items-center justify-center">
+<svg class="w-full h-full transform -rotate-90">
+<circle class="text-surface-container-high" cx="96" cy="96" fill="transparent" r="88" stroke="currentColor" stroke-width="12"></circle>
+<circle class="text-secondary transition-all duration-1000 ease-out" cx="96" cy="96" fill="transparent" r="88" stroke="currentColor" stroke-dasharray="552.92" stroke-dashoffset="82.93" stroke-width="12"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center">
+<span class="text-display-lg font-display-lg text-primary">85</span>
+<span class="text-label-md font-label-md text-outline">/ 100</span>
+</div>
+</div>
+<div class="flex-1 text-center md:text-left">
+<div class="inline-flex items-center gap-xs px-md py-xs bg-secondary-container text-on-secondary-container rounded-full mb-md">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-label-md font-label-md">C1 Advanced Level</span>
+</div>
+<h1 class="text-headline-md font-headline-md text-primary mb-sm">Sizning Business English darajangiz yuqori!</h1>
+<p class="text-body-md text-on-surface-variant max-w-lg mb-lg">
+                        Siz murakkab biznes mavzularini tushunish va professional muhitda erkin muloqot qilish qobiliyatiga egasiz. Sertifikatingizni yuklab olishingiz mumkin.
+                    </p>
+<div class="flex flex-wrap gap-md justify-center md:justify-start">
+<button class="bg-secondary text-on-secondary px-lg py-md rounded-lg font-label-md flex items-center gap-sm hover:translate-y-[-2px] transition-all shadow-md active:scale-95">
+<span class="material-symbols-outlined">download</span>
+                            Sertifikatni yuklab olish
+                        </button>
+<button class="border-2 border-primary text-primary px-lg py-md rounded-lg font-label-md flex items-center gap-sm hover:bg-surface-container transition-all active:scale-95">
+<span class="material-symbols-outlined">share</span>
+                            Ulashish
+                        </button>
+</div>
+</div>
+</div>
+<!-- Side Quick Stats -->
+<div class="flex flex-col gap-md">
+<div class="glass-card rounded-xl p-md flex items-center gap-md">
+<div class="h-12 w-12 rounded-lg bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed">
+<span class="material-symbols-outlined">timer</span>
+</div>
+<div>
+<p class="text-caption font-caption text-outline">Umumiy vaqt</p>
+<p class="text-title-lg font-title-lg text-primary">124 daqiqa</p>
+</div>
+</div>
+<div class="glass-card rounded-xl p-md flex items-center gap-md">
+<div class="h-12 w-12 rounded-lg bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined">check_circle</span>
+</div>
+<div>
+<p class="text-caption font-caption text-outline">To'g'ri javoblar</p>
+<p class="text-title-lg font-title-lg text-primary">142 / 160</p>
+</div>
+</div>
+<div class="glass-card rounded-xl p-md flex items-center gap-md">
+<div class="h-12 w-12 rounded-lg bg-primary-container flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined">trending_up</span>
+</div>
+<div>
+<p class="text-caption font-caption text-outline">O'sish dinamikasi</p>
+<p class="text-title-lg font-title-lg text-primary">+12% o'tgan oydan</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Detailed Breakdown: Skills Radar/Bento Grid -->
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-lg">
+<h2 class="col-span-full text-headline-sm font-headline-sm text-primary">Ko'nikmalar tahlili</h2>
+<!-- Vocabulary Card -->
+<div class="glass-card rounded-xl p-lg flex flex-col gap-md hover:translate-y-[-4px] transition-all cursor-default">
+<div class="flex justify-between items-center">
+<span class="material-symbols-outlined text-primary p-sm bg-surface-container rounded-lg">translate</span>
+<span class="text-label-md font-label-md text-secondary">92%</span>
+</div>
+<h3 class="text-title-lg font-title-lg">Lug'at boyligi</h3>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full progress-liquid" style="width: 92%"></div>
+</div>
+<p class="text-caption font-caption text-outline">Siz ixtisoslashgan biznes terminologiyasini juda yaxshi bilasiz.</p>
+</div>
+<!-- Grammar Card -->
+<div class="glass-card rounded-xl p-lg flex flex-col gap-md hover:translate-y-[-4px] transition-all cursor-default">
+<div class="flex justify-between items-center">
+<span class="material-symbols-outlined text-primary p-sm bg-surface-container rounded-lg">terminal</span>
+<span class="text-label-md font-label-md text-secondary">78%</span>
+</div>
+<h3 class="text-title-lg font-title-lg">Grammatika</h3>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full progress-liquid" style="width: 78%"></div>
+</div>
+<p class="text-caption font-caption text-outline">Murakkab gap tuzilmalarida kichik xatoliklar kuzatildi.</p>
+</div>
+<!-- Reading Card -->
+<div class="glass-card rounded-xl p-lg flex flex-col gap-md hover:translate-y-[-4px] transition-all cursor-default">
+<div class="flex justify-between items-center">
+<span class="material-symbols-outlined text-primary p-sm bg-surface-container rounded-lg">menu_book</span>
+<span class="text-label-md font-label-md text-secondary">88%</span>
+</div>
+<h3 class="text-title-lg font-title-lg">O'qib tushunish</h3>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full progress-liquid" style="width: 88%"></div>
+</div>
+<p class="text-caption font-caption text-outline">Hisobotlar va maqolalardan asosiy ma'lumotlarni tez ajratasiz.</p>
+</div>
+<!-- Writing Card -->
+<div class="glass-card rounded-xl p-lg flex flex-col gap-md hover:translate-y-[-4px] transition-all cursor-default">
+<div class="flex justify-between items-center">
+<span class="material-symbols-outlined text-primary p-sm bg-surface-container rounded-lg">edit_note</span>
+<span class="text-label-md font-label-md text-secondary">82%</span>
+</div>
+<h3 class="text-title-lg font-title-lg">Yozish ko'nikmasi</h3>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full progress-liquid" style="width: 82%"></div>
+</div>
+<p class="text-caption font-caption text-outline">Email va rasmiy xatlarni professional uslubda yoza olasiz.</p>
+</div>
+<!-- Listening Card -->
+<div class="glass-card rounded-xl p-lg flex flex-col gap-md hover:translate-y-[-4px] transition-all cursor-default">
+<div class="flex justify-between items-center">
+<span class="material-symbols-outlined text-primary p-sm bg-surface-container rounded-lg">hearing</span>
+<span class="text-label-md font-label-md text-secondary">95%</span>
+</div>
+<h3 class="text-title-lg font-title-lg">Eshitib tushunish</h3>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full progress-liquid" style="width: 95%"></div>
+</div>
+<p class="text-caption font-caption text-outline">Turli aksentdagi nutqlarni tushunishda muammo yo'q.</p>
+</div>
+<!-- Speaking Card -->
+<div class="glass-card rounded-xl p-lg flex flex-col gap-md hover:translate-y-[-4px] transition-all cursor-default">
+<div class="flex justify-between items-center">
+<span class="material-symbols-outlined text-primary p-sm bg-surface-container rounded-lg">record_voice_over</span>
+<span class="text-label-md font-label-md text-secondary">75%</span>
+</div>
+<h3 class="text-title-lg font-title-lg">Gapirish ko'nikmasi</h3>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full progress-liquid" style="width: 75%"></div>
+</div>
+<p class="text-caption font-caption text-outline">Fikrlaringizni ifodalashda ravonlik ustida ishlash kerak.</p>
+</div>
+</section>
+<!-- Topic Analytics & Suggestions -->
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-lg">
+<!-- Performance by Topic -->
+<div class="glass-card rounded-xl p-lg">
+<h3 class="text-title-lg font-title-lg text-primary mb-lg">Biznes mavzular bo'yicha tahlil</h3>
+<div class="flex flex-col gap-md">
+<div class="flex items-center gap-md">
+<div class="w-24 text-caption font-caption text-outline">Muzokaralar</div>
+<div class="flex-1 bg-surface-container-high h-4 rounded-full overflow-hidden">
+<div class="bg-primary h-full" style="width: 88%"></div>
+</div>
+<div class="w-10 text-right text-label-md">88</div>
+</div>
+<div class="flex items-center gap-md">
+<div class="w-24 text-caption font-caption text-outline">Prezentatsiya</div>
+<div class="flex-1 bg-surface-container-high h-4 rounded-full overflow-hidden">
+<div class="bg-primary h-full" style="width: 72%"></div>
+</div>
+<div class="w-10 text-right text-label-md">72</div>
+</div>
+<div class="flex items-center gap-md">
+<div class="w-24 text-caption font-caption text-outline">Moliya</div>
+<div class="flex-1 bg-surface-container-high h-4 rounded-full overflow-hidden">
+<div class="bg-primary h-full" style="width: 95%"></div>
+</div>
+<div class="w-10 text-right text-label-md">95</div>
+</div>
+<div class="flex items-center gap-md">
+<div class="w-24 text-caption font-caption text-outline">Marketing</div>
+<div class="flex-1 bg-surface-container-high h-4 rounded-full overflow-hidden">
+<div class="bg-primary h-full" style="width: 80%"></div>
+</div>
+<div class="w-10 text-right text-label-md">80</div>
+</div>
+</div>
+</div>
+<!-- Improvement Suggestions -->
+<div class="glass-card rounded-xl p-lg border-l-4 border-l-tertiary-fixed-dim">
+<h3 class="text-title-lg font-title-lg text-primary mb-md">Rivojlanish uchun tavsiyalar</h3>
+<ul class="flex flex-col gap-md">
+<li class="flex gap-md items-start">
+<span class="material-symbols-outlined text-tertiary-fixed-dim mt-1">lightbulb</span>
+<div>
+<p class="font-bold text-on-surface">Gapirish ravonligini oshirish</p>
+<p class="text-caption text-outline">Haftada 2 marta AI Tutor bilan muzokaralar simulyatsiyasida qatnashing.</p>
+</div>
+</li>
+<li class="flex gap-md items-start">
+<span class="material-symbols-outlined text-tertiary-fixed-dim mt-1">lightbulb</span>
+<div>
+<p class="font-bold text-on-surface">Prezentatsiya ko'nikmalari</p>
+<p class="text-caption text-outline">"Public Speaking for Executives" modulini qayta ko'rib chiqing va 3-mashqni bajaring.</p>
+</div>
+</li>
+<li class="flex gap-md items-start">
+<span class="material-symbols-outlined text-tertiary-fixed-dim mt-1">lightbulb</span>
+<div>
+<p class="font-bold text-on-surface">Grammatika tahlili</p>
+<p class="text-caption text-outline">Shart mayli (Conditionals) mavzusidagi testlardan o'ting.</p>
+</div>
+</li>
+</ul>
+<button class="mt-lg w-full py-md text-primary font-bold border-2 border-primary rounded-lg hover:bg-primary hover:text-white transition-all">
+                    Keyingi bosqichni boshlash
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-auto bg-primary dark:bg-primary-container text-on-primary">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-lg py-xl max-w-container-max mx-auto gap-lg">
+<div class="flex flex-col items-center md:items-start gap-sm">
+<div class="font-title-lg text-on-primary font-bold">Business English Pro</div>
+<p class="font-caption text-caption text-on-primary/70">© 2024 Business English Pro. Enterprise Edition.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-xl">
+<a class="text-on-primary/70 hover:text-on-primary transition-opacity font-caption underline-offset-4 hover:underline" href="#">Privacy Policy</a>
+<a class="text-on-primary/70 hover:text-on-primary transition-opacity font-caption underline-offset-4 hover:underline" href="#">Terms of Service</a>
+<a class="text-on-primary/70 hover:text-on-primary transition-opacity font-caption underline-offset-4 hover:underline" href="#">Corporate Compliance</a>
+<a class="text-on-primary/70 hover:text-on-primary transition-opacity font-caption underline-offset-4 hover:underline" href="#">Contact Sales</a>
+</div>
+</div>
+</footer>
+<script>
+        // Micro-interaction for smooth progress bar entry
+        document.addEventListener('DOMContentLoaded', () => {
+            const bars = document.querySelectorAll('.progress-liquid');
+            bars.forEach(bar => {
+                const width = bar.style.width;
+                bar.style.width = '0';
+                setTimeout(() => {
+                    bar.style.transition = 'width 1.5s cubic-bezier(0.34, 1.56, 0.64, 1)';
+                    bar.style.width = width;
+                }, 300);
+            });
+        });
+    </script>
+</body></html>

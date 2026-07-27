@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+
+<html class="light" lang="uz"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Muzokaralar olib borish strategiyasi - Skill Assessment</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container": "#e5eeff",
+                    "outline": "#72777e",
+                    "on-error-container": "#93000a",
+                    "on-primary-fixed-variant": "#1f4a6c",
+                    "inverse-on-surface": "#eaf1ff",
+                    "on-secondary-container": "#00714d",
+                    "primary-container": "#0b3c5d",
+                    "outline-variant": "#c2c7ce",
+                    "on-tertiary-fixed-variant": "#653e00",
+                    "surface-bright": "#f8f9ff",
+                    "on-tertiary-container": "#e39100",
+                    "primary-fixed-dim": "#a3cbf2",
+                    "primary": "#00263f",
+                    "surface-container-lowest": "#ffffff",
+                    "surface": "#f8f9ff",
+                    "secondary": "#006c49",
+                    "surface-variant": "#d3e4fe",
+                    "secondary-container": "#6cf8bb",
+                    "on-primary-fixed": "#001d32",
+                    "on-secondary-fixed": "#002113",
+                    "on-primary-container": "#7fa7cd",
+                    "secondary-fixed-dim": "#4edea3",
+                    "on-secondary-fixed-variant": "#005236",
+                    "surface-container-high": "#dce9ff",
+                    "on-error": "#ffffff",
+                    "on-background": "#0b1c30",
+                    "tertiary-fixed": "#ffddb8",
+                    "on-primary": "#ffffff",
+                    "surface-tint": "#396285",
+                    "inverse-surface": "#213145",
+                    "error": "#ba1a1a",
+                    "error-container": "#ffdad6",
+                    "surface-container-highest": "#d3e4fe",
+                    "tertiary-container": "#533200",
+                    "primary-fixed": "#cee5ff",
+                    "background": "#f8f9ff",
+                    "inverse-primary": "#a3cbf2",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "surface-container-low": "#eff4ff",
+                    "on-surface-variant": "#42474e",
+                    "surface-dim": "#cbdbf5",
+                    "tertiary": "#361f00",
+                    "on-tertiary-fixed": "#2a1700",
+                    "tertiary-fixed-dim": "#ffb95f",
+                    "on-surface": "#0b1c30",
+                    "secondary-fixed": "#6ffbbe"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "sm": "8px",
+                    "md": "16px",
+                    "2xl": "48px",
+                    "gutter": "24px",
+                    "3xl": "64px",
+                    "xs": "4px",
+                    "lg": "24px",
+                    "container-max": "1280px",
+                    "base": "4px",
+                    "xl": "32px"
+            },
+            "fontFamily": {
+                    "headline-sm": ["Poppins"],
+                    "caption": ["Inter"],
+                    "title-lg": ["Poppins"],
+                    "display-lg-mobile": ["Poppins"],
+                    "body-md": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "label-md": ["Inter"],
+                    "headline-md": ["Poppins"],
+                    "display-lg": ["Poppins"]
+            },
+            "fontSize": {
+                    "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "caption": ["12px", {"lineHeight": "1.4", "fontWeight": "400"}],
+                    "title-lg": ["20px", {"lineHeight": "1.5", "fontWeight": "500"}],
+                    "display-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "headline-md": ["30px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .glass-surface {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+      .scroll-hide::-webkit-scrollbar {
+        display: none;
+      }
+      .assessment-grid {
+        display: grid;
+        grid-template-columns: 1fr 380px;
+        gap: 24px;
+      }
+      @media (max-width: 1279px) {
+        .assessment-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+      .timer-glow {
+        box-shadow: 0 0 15px rgba(0, 108, 73, 0.2);
+      }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen">
+<!-- Top Navigation Bar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-sm">
+<div class="flex justify-between items-center w-full px-lg py-sm max-w-container-max mx-auto h-16">
+<div class="flex items-center gap-md">
+<img alt="Business English Pro Logo" class="h-10 w-auto" src="https://lh3.googleusercontent.com/aida/AP1WRLtW9fvuQ2g2G5bSjMiNkwxdEmQoPFkyTyOEp9AxH12mT-3SZoRPAXUdoB7CQulza5z5y52MGWdEK-yA2tYsTWpPWE4l-3KuTodXrkKSQ24HX42xcG9tnf5lkc98iqDZDdx9O4N55LoCevuhgHh2qmz5IMpHTOCTlXRwU3C7UCKOUKBjDflzsw0noMFpFMi41ZCEZJa-CCZFeq0F4BsYhaXHobNUo7wdUIlHpx43gWknJ4T2Q3FFsaR_OPbC"/>
+<div class="h-6 w-[1px] bg-outline-variant mx-2"></div>
+<h1 class="font-title-lg text-title-lg font-bold text-primary">Business English Pro</h1>
+</div>
+<div class="hidden md:flex items-center gap-lg">
+<nav class="flex items-center gap-md">
+<a class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-200" href="#">Dashboard</a>
+<a class="text-primary font-bold border-b-2 border-secondary pb-1 transition-colors duration-200" href="#">Curriculum</a>
+<a class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-200" href="#">Live Sessions</a>
+</nav>
+</div>
+<div class="flex items-center gap-md">
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary transition-colors">notifications</span>
+<div class="flex items-center gap-sm bg-surface-container-high rounded-full px-md py-xs border border-outline-variant/30">
+<div class="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center text-white text-xs font-bold">SM</div>
+<span class="text-label-md font-label-md hidden sm:inline">Sardor M.</span>
+</div>
+</div>
+</div>
+</header>
+<!-- Main Content Layout -->
+<main class="pt-24 pb-12 px-gutter max-w-container-max mx-auto">
+<!-- Assessment Header -->
+<div class="mb-lg flex flex-col md:flex-row md:items-end justify-between gap-md">
+<div>
+<nav class="flex items-center gap-2 text-caption text-on-surface-variant mb-2">
+<span>O'quv kursi</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span>Muzokaralar</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary font-semibold">Malaka testi</span>
+</nav>
+<h2 class="font-headline-md text-headline-md text-primary">Muzokaralar olib borish strategiyasi</h2>
+<p class="text-on-surface-variant">C1 Professional darajadagi kompleks baholash</p>
+</div>
+<div class="flex items-center gap-lg bg-surface-container-lowest p-md rounded-xl shadow-sm border border-outline-variant/20">
+<div class="text-center px-lg border-r border-outline-variant/30">
+<p class="text-caption text-on-surface-variant uppercase tracking-wider mb-1">Qolgan vaqt</p>
+<div class="font-title-lg text-secondary font-bold tabular-nums" id="timer">24:45</div>
+</div>
+<div class="text-center px-lg">
+<p class="text-caption text-on-surface-variant uppercase tracking-wider mb-1">Jarayon</p>
+<div class="font-title-lg text-primary font-bold">65%</div>
+</div>
+</div>
+</div>
+<!-- Multi-step Status Bar -->
+<div class="mb-xl overflow-x-auto scroll-hide">
+<div class="flex items-center min-w-[800px] justify-between relative px-2">
+<!-- Progress Line Background -->
+<div class="absolute top-1/2 left-0 w-full h-[2px] bg-outline-variant/30 -translate-y-1/2 z-0"></div>
+<!-- Step 1: Vocabulary (Completed) -->
+<div class="relative z-10 flex flex-col items-center gap-2 group">
+<div class="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center shadow-lg">
+<span class="material-symbols-outlined text-[20px]">check</span>
+</div>
+<span class="text-label-md text-on-surface-variant font-medium">Lug'at</span>
+</div>
+<!-- Step 2: Grammar (Completed) -->
+<div class="relative z-10 flex flex-col items-center gap-2 group">
+<div class="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center shadow-lg">
+<span class="material-symbols-outlined text-[20px]">check</span>
+</div>
+<span class="text-label-md text-on-surface-variant font-medium">Grammatika</span>
+</div>
+<!-- Step 3: Reading (Current) -->
+<div class="relative z-10 flex flex-col items-center gap-2">
+<div class="w-12 h-12 rounded-full bg-primary-container text-white flex items-center justify-center border-4 border-surface shadow-xl outline outline-2 outline-primary-container">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">menu_book</span>
+</div>
+<span class="text-label-md text-primary font-bold">O'qish</span>
+</div>
+<!-- Step 4: Writing (Active Integrated) -->
+<div class="relative z-10 flex flex-col items-center gap-2">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest text-primary flex items-center justify-center border border-primary-container/30">
+<span class="material-symbols-outlined text-[20px]">edit_note</span>
+</div>
+<span class="text-label-md text-on-surface-variant">Yozma ish</span>
+</div>
+<!-- Step 5: Listening -->
+<div class="relative z-10 flex flex-col items-center gap-2">
+<div class="w-10 h-10 rounded-full bg-surface-container-low text-outline flex items-center justify-center border border-outline-variant">
+<span class="material-symbols-outlined text-[20px]">hearing</span>
+</div>
+<span class="text-label-md text-on-surface-variant opacity-60">Eshitish</span>
+</div>
+<!-- Step 6: Speaking -->
+<div class="relative z-10 flex flex-col items-center gap-2">
+<div class="w-10 h-10 rounded-full bg-surface-container-low text-outline flex items-center justify-center border border-outline-variant">
+<span class="material-symbols-outlined text-[20px]">mic</span>
+</div>
+<span class="text-label-md text-on-surface-variant opacity-60">Gapirish</span>
+</div>
+</div>
+</div>
+<!-- Assessment Workspace Grid -->
+<div class="assessment-grid">
+<!-- Left Column: Reading Material & Writing Task -->
+<div class="space-y-lg">
+<!-- Reading Section -->
+<section class="glass-surface p-xl rounded-2xl shadow-sm border border-white/40">
+<div class="flex items-center gap-sm mb-md text-primary">
+<span class="material-symbols-outlined">description</span>
+<h3 class="font-title-lg text-title-lg font-bold">Keys tahlili: Xalqaro muzokaralar</h3>
+</div>
+<div class="prose prose-blue max-w-none text-on-surface leading-relaxed font-body-md h-[300px] overflow-y-auto pr-md custom-scrollbar">
+<p class="mb-4">
+                            Global bozorda muzokaralar olib borish nafaqat til bilimini, balki madaniy kontekstni tushunishni ham talab etadi. Quyidagi matn "GreenTech Solutions" va "Asia-Pacific Logistics" o'rtasidagi hamkorlik shartnomasi muzokaralarining stenogrammasidan olingan.
+                        </p>
+<p class="mb-4 font-semibold italic">
+                            "...Muzokaralarning birinchi bosqichida tomonlar o'rtasidagi asosiy qarama-qarshilik logistika xarajatlarini bo'lishishda yuzaga keldi. GreenTech vakillari 'Incoterms 2020' qoidalariga asoslangan DDP shartlarini taklif qilishdi, biroq APL bu stavkalarni o'ta yuqori deb hisobladi."
+                        </p>
+<p class="mb-4">
+                            Sizning vazifangiz: Berilgan ma'lumotlarga tayanib, APL kompaniyasi menejeriga yo'llangan rasmiy e'tiroz xatini (Rebuttal letter) tayyorlashingiz kerak. Xatda hamkorlikning strategik ahamiyatini saqlab qolgan holda, narxlar bo'yicha murosaga kelish taklifini bering.
+                        </p>
+</div>
+</section>
+<!-- Writing Task Input -->
+<section class="glass-surface p-xl rounded-2xl shadow-sm border border-white/40">
+<div class="flex items-center justify-between mb-md">
+<div class="flex items-center gap-sm text-primary">
+<span class="material-symbols-outlined">edit</span>
+<h3 class="font-title-lg text-title-lg font-bold">Javobingiz</h3>
+</div>
+<div class="flex items-center gap-md text-caption text-on-surface-variant">
+<span id="word-count">0 / 250 so'z</span>
+<div class="flex gap-1">
+<button class="p-xs hover:bg-surface-container-high rounded transition-colors"><span class="material-symbols-outlined text-[18px]">format_bold</span></button>
+<button class="p-xs hover:bg-surface-container-high rounded transition-colors"><span class="material-symbols-outlined text-[18px]">format_italic</span></button>
+<button class="p-xs hover:bg-surface-container-high rounded transition-colors"><span class="material-symbols-outlined text-[18px]">list</span></button>
+</div>
+</div>
+</div>
+<textarea class="w-full min-h-[350px] p-lg rounded-xl border border-outline-variant bg-surface-container-lowest focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all font-body-md" id="writing-area" placeholder="Rasmiy xatni shu yerda yozishni boshlang..."></textarea>
+</section>
+</div>
+<!-- Right Column: AI Assistant & Controls -->
+<div class="flex flex-col gap-lg">
+<!-- AI Feedback Preview -->
+<div class="bg-primary-container text-white p-xl rounded-2xl shadow-md relative overflow-hidden">
+<!-- Subtle pattern background -->
+<div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 24px 24px;"></div>
+<div class="relative z-10">
+<div class="flex items-center gap-sm mb-md">
+<span class="material-symbols-outlined text-secondary-fixed">smart_toy</span>
+<h4 class="font-title-lg font-bold">AI Yordamchi (Live)</h4>
+</div>
+<div class="space-y-md" id="ai-feedback">
+<div class="p-md bg-white/10 rounded-lg border border-white/10">
+<p class="text-label-md font-semibold text-secondary-fixed mb-1">Mavzu dolzarbligi</p>
+<p class="text-body-md text-white/80">Hozircha matn kiritilmadi. Matnni yozishni boshlashingiz bilan tahlil taqdim etiladi.</p>
+</div>
+<div class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-secondary-fixed-dim mt-1">info</span>
+<p class="text-caption leading-relaxed">
+                                    AI sizning matningizdagi rasmiy uslub (Formal Tone) va "Incoterms" kabi professional atamalardan foydalanish darajasini baholaydi.
+                                </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Requirements Checklist -->
+<div class="bg-surface-container-low p-xl rounded-2xl border border-outline-variant/30">
+<h4 class="font-title-lg text-primary font-bold mb-md">Vazifa talablari</h4>
+<ul class="space-y-sm">
+<li class="flex items-center gap-sm text-body-md">
+<span class="material-symbols-outlined text-secondary">check_circle</span>
+<span>Rasmiy salomlashish</span>
+</li>
+<li class="flex items-center gap-sm text-body-md">
+<span class="material-symbols-outlined text-outline">radio_button_unchecked</span>
+<span>Muzokaralar mohiyatini tushuntirish</span>
+</li>
+<li class="flex items-center gap-sm text-body-md">
+<span class="material-symbols-outlined text-outline">radio_button_unchecked</span>
+<span>Yangi narx taklifini asoslash</span>
+</li>
+<li class="flex items-center gap-sm text-body-md">
+<span class="material-symbols-outlined text-outline">radio_button_unchecked</span>
+<span>Professional yakun</span>
+</li>
+</ul>
+</div>
+<!-- Navigation Actions -->
+<div class="flex flex-col gap-sm mt-auto">
+<button class="w-full py-md bg-secondary hover:bg-secondary-container hover:text-on-secondary-container text-white font-bold rounded-xl transition-all shadow-lg active:scale-[0.98] flex items-center justify-center gap-2">
+                        Keyingi bosqichga o'tish
+                        <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="w-full py-md bg-surface-container-high text-primary hover:bg-surface-variant font-semibold rounded-xl transition-all border border-outline-variant/30">
+                        Testni vaqtinchalik to'xtatish
+                    </button>
+</div>
+</div>
+</div>
+</main>
+<!-- Simple Footer -->
+<footer class="w-full mt-auto bg-primary text-on-primary">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-lg py-xl max-w-container-max mx-auto gap-md">
+<div class="flex flex-col items-center md:items-start gap-sm">
+<span class="font-title-lg font-bold">Business English Pro</span>
+<p class="text-caption text-on-primary/70">© 2024 Business English Pro. Enterprise Edition.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-lg">
+<a class="text-caption text-on-primary/70 hover:text-on-primary transition-opacity underline-offset-4 hover:underline" href="#">Maxfiylik siyosati</a>
+<a class="text-caption text-on-primary/70 hover:text-on-primary transition-opacity underline-offset-4 hover:underline" href="#">Foydalanish shartlari</a>
+<a class="text-caption text-on-primary/70 hover:text-on-primary transition-opacity underline-offset-4 hover:underline" href="#">Qo'llab-quvvatlash</a>
+</div>
+</div>
+</footer>
+<script>
+        // Simple word count and AI feedback simulation
+        const textarea = document.getElementById('writing-area');
+        const wordCountDisplay = document.getElementById('word-count');
+        const aiFeedbackBox = document.getElementById('ai-feedback');
+
+        textarea.addEventListener('input', (e) => {
+            const text = e.target.value.trim();
+            const words = text ? text.split(/\s+/).length : 0;
+            wordCountDisplay.textContent = `${words} / 250 so'z`;
+
+            if (words > 10) {
+                aiFeedbackBox.innerHTML = `
+                    <div class="p-md bg-white/10 rounded-lg border border-white/10 animate-pulse">
+                        <p class="text-label-md font-semibold text-secondary-fixed mb-1">Mavzu: Muzokaralar</p>
+                        <p class="text-body-md text-white/80">Siz "Incoterms" mavzusini yaxshi tahlil qilyapsiz. Rasmiy uslubni saqlang.</p>
+                    </div>
+                    <div class="mt-2 text-caption text-secondary-fixed">
+                         Kiritilgan so'zlar: ${words}. Uslub: B2-C1 Akademik.
+                    </div>
+                `;
+            } else if (words === 0) {
+                 aiFeedbackBox.innerHTML = `
+                    <div class="p-md bg-white/10 rounded-lg border border-white/10">
+                        <p class="text-label-md font-semibold text-secondary-fixed mb-1">Mavzu dolzarbligi</p>
+                        <p class="text-body-md text-white/80">Hozircha matn kiritilmadi. Matnni yozishni boshlashingiz bilan tahlil taqdim etiladi.</p>
+                    </div>
+                `;
+            }
+        });
+
+        // Simple countdown timer
+        let timeLeft = 24 * 60 + 45; // 24:45 in seconds
+        const timerElement = document.getElementById('timer');
+
+        const countdown = setInterval(() => {
+            const minutes = Math.floor(timeLeft / 60);
+            const seconds = timeLeft % 60;
+            timerElement.textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+            
+            if (timeLeft <= 0) {
+                clearInterval(countdown);
+                timerElement.classList.add('text-error');
+            } else {
+                timeLeft--;
+            }
+        }, 1000);
+    </script>
+</body></html>

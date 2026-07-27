@@ -1,0 +1,388 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>AI Tutor &amp; Speaking Lab | Business English Pro</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Poppins:wght@500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .chat-scroll::-webkit-scrollbar {
+            width: 4px;
+        }
+        .chat-scroll::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+        @keyframes waveform {
+            0%, 100% { height: 8px; }
+            50% { height: 32px; }
+        }
+        .wave-bar {
+            width: 3px;
+            background: #6cf8bb;
+            border-radius: 2px;
+            animation: waveform 1s ease-in-out infinite;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface": "#f8f9ff",
+                        "tertiary-container": "#533200",
+                        "on-primary-container": "#7fa7cd",
+                        "on-background": "#0b1c30",
+                        "primary": "#00263f",
+                        "surface-dim": "#cbdbf5",
+                        "surface-container-high": "#dce9ff",
+                        "on-surface": "#0b1c30",
+                        "inverse-primary": "#a3cbf2",
+                        "secondary-container": "#6cf8bb",
+                        "on-primary": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "primary-container": "#0b3c5d",
+                        "on-tertiary-fixed-variant": "#653e00",
+                        "inverse-on-surface": "#eaf1ff",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed": "#2a1700",
+                        "surface-container-low": "#eff4ff",
+                        "tertiary-fixed": "#ffddb8",
+                        "on-primary-fixed": "#001d32",
+                        "on-secondary-container": "#00714d",
+                        "surface-tint": "#396285",
+                        "on-primary-fixed-variant": "#1f4a6c",
+                        "secondary-fixed-dim": "#4edea3",
+                        "error": "#ba1a1a",
+                        "on-tertiary-container": "#e39100",
+                        "on-surface-variant": "#42474e",
+                        "on-secondary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-surface": "#213145",
+                        "on-error-container": "#93000a",
+                        "tertiary": "#361f00",
+                        "secondary": "#006c49",
+                        "surface-container": "#e5eeff",
+                        "error-container": "#ffdad6",
+                        "primary-fixed-dim": "#a3cbf2",
+                        "outline": "#72777e",
+                        "on-secondary-fixed-variant": "#005236",
+                        "outline-variant": "#c2c7ce",
+                        "surface-variant": "#d3e4fe",
+                        "surface-bright": "#f8f9ff",
+                        "on-secondary-fixed": "#002113",
+                        "surface-container-highest": "#d3e4fe",
+                        "primary-fixed": "#cee5ff",
+                        "secondary-fixed": "#6ffbbe",
+                        "tertiary-fixed-dim": "#ffb95f",
+                        "background": "#f8f9ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "3xl": "64px",
+                        "xs": "4px",
+                        "gutter": "24px",
+                        "xl": "32px",
+                        "base": "4px",
+                        "container-max": "1280px",
+                        "md": "16px",
+                        "2xl": "48px",
+                        "lg": "24px",
+                        "sm": "8px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Inter"],
+                        "title-lg": ["Poppins"],
+                        "headline-sm": ["Poppins"],
+                        "body-lg": ["Inter"],
+                        "caption": ["Inter"],
+                        "display-lg": ["Poppins"],
+                        "display-lg-mobile": ["Poppins"],
+                        "body-md": ["Inter"],
+                        "headline-md": ["Poppins"]
+                    },
+                    "fontSize": {
+                        "label-md": ["14px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "title-lg": ["20px", {"lineHeight": "1.5", "fontWeight": "500"}],
+                        "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "caption": ["12px", {"lineHeight": "1.4", "fontWeight": "400"}],
+                        "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "display-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-md": ["30px", {"lineHeight": "1.3", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-primary overflow-hidden">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl dark:bg-primary-container/80 shadow-sm flex justify-between items-center w-full px-lg py-sm max-w-container-max mx-auto">
+<div class="flex items-center gap-md">
+<span class="text-title-lg font-title-lg font-bold text-primary dark:text-on-primary-container">Biznes va tadbirkorlik Oliy maktabi Surxondaryo hududiy filiali Biznes Ingliz tili kursi</span>
+<div class="hidden md:flex gap-lg ml-xl">
+<a class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-200 cursor-pointer active:scale-95" href="#">Dashboard</a>
+<a class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-200 cursor-pointer active:scale-95" href="#">Curriculum</a>
+<a class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-200 cursor-pointer active:scale-95" href="#">Live Sessions</a>
+</div>
+</div>
+<div class="flex items-center gap-md">
+<button class="bg-secondary text-white px-lg py-sm rounded-full font-label-md hover:opacity-90 transition-all">Upgrade to Pro</button>
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer">notifications</span>
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-secondary">
+<img class="w-full h-full object-cover" data-alt="A professional headshot of a corporate executive in a modern, brightly lit office environment. The person is wearing a tailored navy suit and smiling confidently, embodying academic and professional excellence. Soft ambient light from large windows creates a high-fidelity, polished look in line with an elite educational platform." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfqzYIqlE-4yQn_7DSnEMiFXCYlqLrI2oRhptJFjda1vRE58WPB0Ykd7HwV4rBtSrCIsdGonZdsSwl4tlp2GcdWw0-OKZjIDalJ1fOtPdXJ6MWrsZ878-C4q4Hw4Rx83cnx3_QhLBqpwnpVesTogjw_RWvgQVW9sTOto5exLZaL3Db-SfhcuPSpbKXenM_lDxik-N3ERpXBwz7-xsGWkcwhdGM738uMitcFILN068HZoSA9k3oBUzjtw">
+</div>
+</div>
+</nav>
+<!-- Side Navigation -->
+<aside class="fixed left-0 top-0 h-full w-64 z-40 bg-surface-container-low/90 backdrop-blur-xl dark:bg-inverse-surface/90 flex flex-col h-full py-xl px-md hidden md:flex pt-24">
+<div class="mb-xl px-md">
+<h2 class="text-headline-sm font-headline-sm text-primary">Biznes va tadbirkorlik Oliy maktabi Surxondaryo hududiy filiali Biznes Ingliz tili kursi</h2>
+<p class="text-label-md font-label-md text-on-surface-variant opacity-70">C1 Advanced Level</p>
+</div>
+<nav class="flex-grow space-y-sm">
+<div class="text-on-surface-variant p-3 flex items-center gap-3 hover:bg-surface-container-high transition-all duration-300 cursor-pointer rounded-lg hover:translate-x-1">
+<span class="material-symbols-outlined">school</span>
+<span class="font-label-md">My Learning</span>
+</div>
+<div class="text-on-surface-variant p-3 flex items-center gap-3 hover:bg-surface-container-high transition-all duration-300 cursor-pointer rounded-lg hover:translate-x-1">
+<span class="material-symbols-outlined">terminal</span>
+<span class="font-label-md">Grammar Lab</span>
+</div>
+<div class="text-on-surface-variant p-3 flex items-center gap-3 hover:bg-surface-container-high transition-all duration-300 cursor-pointer rounded-lg hover:translate-x-1">
+<span class="material-symbols-outlined">translate</span>
+<span class="font-label-md">Vocabulary</span>
+</div>
+<div class="bg-secondary-container text-on-secondary-container rounded-lg p-3 flex items-center gap-3 hover:bg-surface-container-high transition-all duration-300 cursor-pointer hover:translate-x-1">
+<span class="material-symbols-outlined">smart_toy</span>
+<span class="font-label-md">AI Tutor</span>
+</div>
+<div class="text-on-surface-variant p-3 flex items-center gap-3 hover:bg-surface-container-high transition-all duration-300 cursor-pointer rounded-lg hover:translate-x-1">
+<span class="material-symbols-outlined">folder_open</span>
+<span class="font-label-md">Resources</span>
+</div>
+</nav>
+<div class="mt-auto space-y-sm border-t border-outline-variant/20 pt-md">
+<div class="text-on-surface-variant p-3 flex items-center gap-3 hover:bg-surface-container-high transition-all duration-300 cursor-pointer rounded-lg">
+<span class="material-symbols-outlined">help</span>
+<span class="font-label-md">Support</span>
+</div>
+<div class="text-on-surface-variant p-3 flex items-center gap-3 hover:bg-surface-container-high transition-all duration-300 cursor-pointer rounded-lg">
+<span class="material-symbols-outlined">logout</span>
+<span class="font-label-md">Sign Out</span>
+</div>
+</div>
+</aside>
+<!-- Main Content: AI Tutor & Speaking Lab -->
+<main class="md:ml-64 pt-20 h-screen flex flex-col md:flex-row bg-primary-container relative">
+<!-- Background Shader Ambient Effect -->
+<div class="absolute inset-0 opacity-20 pointer-events-none">
+
+</div>
+<!-- Left: Chat Interface -->
+<section class="w-full md:w-1/2 flex flex-col h-full border-r border-white/5 relative z-10">
+<header class="p-lg flex items-center justify-between glass-card m-md rounded-xl">
+<div class="flex items-center gap-md">
+<div class="relative">
+<div class="w-12 h-12 rounded-full bg-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-3xl">smart_toy</span>
+</div>
+<div class="absolute bottom-0 right-0 w-3 h-3 bg-secondary-container rounded-full border-2 border-primary"></div>
+</div>
+<div>
+<h3 class="text-white font-headline-sm text-headline-sm">Chatting with Alex</h3>
+<p class="text-on-primary-container text-caption font-caption">AI Executive Coach • Online</p>
+</div>
+</div>
+<div class="flex gap-sm">
+<button class="p-sm rounded-lg glass-card text-on-primary-container hover:text-white transition-colors">
+<span class="material-symbols-outlined">settings</span>
+</button>
+</div>
+</header>
+<div class="flex-grow chat-scroll overflow-y-auto p-lg space-y-lg">
+<!-- AI Message -->
+<div class="flex items-start gap-md max-w-[85%]">
+<div class="w-8 h-8 rounded-full bg-secondary flex-shrink-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-sm">smart_toy</span>
+</div>
+<div class="glass-card p-md rounded-tr-xl rounded-bl-xl rounded-br-xl">
+<p class="text-white font-body-md text-body-md">Good morning. Today we're focusing on persuasive negotiation. How would you handle a client asking for a 15% discount on your premium service level?</p>
+<div class="mt-sm pt-sm border-t border-white/10">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-sm">lightbulb</span>
+<span class="text-on-primary-container text-caption font-caption">AI Insight: Use the 'Concession' strategy.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- User Message -->
+<div class="flex items-start gap-md max-w-[85%] self-end flex-row-reverse">
+<div class="w-8 h-8 rounded-full bg-primary flex-shrink-0 flex items-center justify-center border border-secondary">
+<span class="material-symbols-outlined text-secondary text-sm">person</span>
+</div>
+<div class="bg-primary/50 border border-secondary/30 p-md rounded-tl-xl rounded-bl-xl rounded-br-xl">
+<p class="text-white font-body-md text-body-md">I would acknowledge their budget constraints but emphasize the long-term ROI of the premium features. Maybe offer a tiered rollout instead of a flat discount.</p>
+</div>
+</div>
+<!-- AI Detailed Explanation Toggle -->
+<div class="flex items-start gap-md max-w-[85%]">
+<div class="w-8 h-8 rounded-full bg-secondary flex-shrink-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-sm">smart_toy</span>
+</div>
+<div class="glass-card p-md rounded-tr-xl rounded-bl-xl rounded-br-xl border-l-4 border-secondary">
+<p class="text-white font-body-md text-body-md italic">"Excellent approach. Your phrasing 'Acknowledge budget constraints' is very professional."</p>
+<div class="mt-md flex items-center justify-between bg-white/5 p-sm rounded-lg">
+<span class="text-on-primary-container text-caption font-label-md">Show Grammar Analysis</span>
+<div class="w-10 h-5 bg-secondary-container/20 rounded-full relative p-xs cursor-pointer">
+<div class="w-3 h-3 bg-secondary-container rounded-full translate-x-5"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Input Area -->
+<footer class="p-lg bg-primary/20 backdrop-blur-md border-t border-white/5">
+<div class="flex flex-col gap-md">
+<!-- Waveform Visualizer -->
+<div class="flex justify-center items-center gap-1 h-8 opacity-50">
+<div class="wave-bar" style="animation-delay: 0.1s"></div>
+<div class="wave-bar" style="animation-delay: 0.3s"></div>
+<div class="wave-bar" style="animation-delay: 0.2s"></div>
+<div class="wave-bar" style="animation-delay: 0.4s"></div>
+<div class="wave-bar" style="animation-delay: 0.1s"></div>
+<div class="wave-bar" style="animation-delay: 0.5s"></div>
+<div class="wave-bar" style="animation-delay: 0.3s"></div>
+</div>
+<div class="flex items-center gap-md">
+<div class="flex-grow glass-card rounded-full px-lg py-sm flex items-center">
+<input class="bg-transparent border-none focus:ring-0 text-white placeholder-on-primary-container w-full font-body-md text-body-md" placeholder="Type your response..." type="text">
+</div>
+<button class="w-12 h-12 rounded-full bg-secondary flex items-center justify-center text-white shadow-lg hover:scale-110 active:scale-95 transition-all">
+<span class="material-symbols-outlined">mic</span>
+</button>
+<button class="w-12 h-12 rounded-full bg-primary border border-white/10 flex items-center justify-center text-white hover:bg-white/10 transition-all">
+<span class="material-symbols-outlined">send</span>
+</button>
+</div>
+</div>
+</footer>
+</section>
+<!-- Right: Speaking Analysis Dashboard -->
+<section class="w-full md:w-1/2 flex flex-col h-full p-xl relative z-10">
+<h2 class="text-white font-headline-md text-headline-md mb-xl">Speaking Analysis</h2>
+<!-- Analysis Bento Grid -->
+<div class="grid grid-cols-2 gap-lg flex-grow">
+<!-- CEFR Score Dial -->
+<div class="col-span-2 glass-card p-xl rounded-2xl flex flex-col items-center justify-center relative overflow-hidden">
+<div class="absolute -top-10 -right-10 w-40 h-40 bg-secondary/10 blur-3xl rounded-full"></div>
+<div class="relative w-48 h-48 flex items-center justify-center">
+<svg class="w-full h-full transform -rotate-90">
+<circle cx="96" cy="96" fill="transparent" r="80" stroke="rgba(255,255,255,0.05)" stroke-width="12"></circle>
+<circle cx="96" cy="96" fill="transparent" r="80" stroke="#6cf8bb" stroke-dasharray="502.4" stroke-dashoffset="125" stroke-linecap="round" stroke-width="12"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center">
+<span class="text-display-lg font-display-lg text-secondary">C1</span>
+<span class="text-on-primary-container font-label-md text-label-md">CEFR LEVEL</span>
+</div>
+</div>
+<p class="mt-xl text-on-primary-container text-body-md font-body-md text-center">Estimated Proficiency: <span class="text-white font-bold">Advanced Business</span></p>
+</div>
+<!-- Fluency Meter -->
+<div class="glass-card p-lg rounded-2xl flex flex-col gap-md">
+<div class="flex justify-between items-center">
+<span class="text-white font-label-md text-label-md uppercase tracking-wider">Fluency</span>
+<span class="text-secondary font-bold">88%</span>
+</div>
+<div class="w-full h-2 bg-white/5 rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 88%"></div>
+</div>
+<p class="text-on-primary-container text-caption font-caption">Speech rate is optimal. Minimal hesitation detected.</p>
+</div>
+<!-- Grammar Meter -->
+<div class="glass-card p-lg rounded-2xl flex flex-col gap-md">
+<div class="flex justify-between items-center">
+<span class="text-white font-label-md text-label-md uppercase tracking-wider">Grammar</span>
+<span class="text-secondary font-bold">72%</span>
+</div>
+<div class="w-full h-2 bg-white/5 rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 72%"></div>
+</div>
+<p class="text-on-primary-container text-caption font-caption">Watch out for subject-verb agreement in complex clauses.</p>
+</div>
+<!-- Vocabulary Meter -->
+<div class="glass-card p-lg rounded-2xl flex flex-col gap-md">
+<div class="flex justify-between items-center">
+<span class="text-white font-label-md text-label-md uppercase tracking-wider">Vocabulary</span>
+<span class="text-secondary font-bold">94%</span>
+</div>
+<div class="w-full h-2 bg-white/5 rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 94%"></div>
+</div>
+<p class="text-on-primary-container text-caption font-caption">Excellent use of industry-specific jargon.</p>
+</div>
+<!-- Pronunciation Meter -->
+<div class="glass-card p-lg rounded-2xl flex flex-col gap-md">
+<div class="flex justify-between items-center">
+<span class="text-white font-label-md text-label-md uppercase tracking-wider">Pronunciation</span>
+<span class="text-secondary font-bold">81%</span>
+</div>
+<div class="w-full h-2 bg-white/5 rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 81%"></div>
+</div>
+<p class="text-on-primary-container text-caption font-caption">Clarity is high. Work on 'th' sounds in 'thereby'.</p>
+</div>
+</div>
+<!-- CTA -->
+<div class="mt-xl">
+<button class="w-full py-xl rounded-2xl bg-secondary text-on-secondary font-headline-sm text-headline-sm flex items-center justify-center gap-md hover:brightness-110 active:scale-[0.98] transition-all shadow-[0_0_40px_rgba(108,248,187,0.2)]">
+<span class="material-symbols-outlined text-4xl">record_voice_over</span>
+                    RECORD FULL RESPONSE
+                </button>
+</div>
+</section>
+</main>
+<!-- Interactive Layer for mic state -->
+<script>
+        // Simple micro-interaction for the record button
+        const recordBtn = document.querySelector('button .material-symbols-outlined[textContent="mic"]');
+        let isRecording = false;
+
+        document.querySelectorAll('button').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const icon = this.querySelector('.material-symbols-outlined');
+                if (icon && icon.textContent === 'mic') {
+                    isRecording = !isRecording;
+                    if (isRecording) {
+                        this.classList.add('bg-error', 'animate-pulse');
+                        this.classList.remove('bg-secondary');
+                        icon.textContent = 'stop';
+                    } else {
+                        this.classList.remove('bg-error', 'animate-pulse');
+                        this.classList.add('bg-secondary');
+                        icon.textContent = 'mic';
+                    }
+                }
+            });
+        });
+    </script>
+
+
+</body></html>

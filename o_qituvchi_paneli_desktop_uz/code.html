@@ -1,0 +1,458 @@
+<!DOCTYPE html><html class="light" lang="uz"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>O'qituvchi Portali - Biznes va tadbirkorlik Oliy maktabi</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Poppins:wght@100..900&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed-dim": "#ffb95f",
+                    "on-secondary": "#ffffff",
+                    "on-secondary-fixed": "#002113",
+                    "on-primary-fixed-variant": "#1f4a6c",
+                    "surface-container": "#e5eeff",
+                    "primary": "#00263f",
+                    "primary-fixed": "#cee5ff",
+                    "on-primary-container": "#7fa7cd",
+                    "secondary-fixed-dim": "#4edea3",
+                    "background": "#f8f9ff",
+                    "on-primary-fixed": "#001d32",
+                    "surface-container-highest": "#d3e4fe",
+                    "on-background": "#0b1c30",
+                    "on-surface-variant": "#42474e",
+                    "on-tertiary-fixed": "#2a1700",
+                    "on-tertiary-container": "#e39100",
+                    "on-secondary-fixed-variant": "#005236",
+                    "surface": "#f8f9ff",
+                    "outline": "#72777e",
+                    "surface-container-lowest": "#ffffff",
+                    "on-surface": "#0b1c30",
+                    "on-tertiary": "#ffffff",
+                    "inverse-surface": "#213145",
+                    "on-error": "#ffffff",
+                    "primary-fixed-dim": "#a3cbf2",
+                    "tertiary-fixed": "#ffddb8",
+                    "surface-bright": "#f8f9ff",
+                    "surface-container-high": "#dce9ff",
+                    "tertiary": "#361f00",
+                    "surface-container-low": "#eff4ff",
+                    "error-container": "#ffdad6",
+                    "secondary-container": "#6cf8bb",
+                    "error": "#ba1a1a",
+                    "outline-variant": "#c2c7ce",
+                    "surface-variant": "#d3e4fe",
+                    "surface-dim": "#cbdbf5",
+                    "secondary-fixed": "#6ffbbe",
+                    "primary-container": "#0b3c5d",
+                    "inverse-primary": "#a3cbf2",
+                    "inverse-on-surface": "#eaf1ff",
+                    "on-secondary-container": "#00714d",
+                    "surface-tint": "#396285",
+                    "secondary": "#006c49",
+                    "tertiary-container": "#533200",
+                    "on-tertiary-fixed-variant": "#653e00",
+                    "on-error-container": "#93000a",
+                    "on-primary": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "xs": "4px",
+                    "md": "16px",
+                    "container-max": "1280px",
+                    "xl": "32px",
+                    "lg": "24px",
+                    "base": "4px",
+                    "3xl": "64px",
+                    "sm": "8px",
+                    "2xl": "48px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Poppins"],
+                    "label-md": ["Inter"],
+                    "display-lg": ["Poppins"],
+                    "display-lg-mobile": ["Poppins"],
+                    "body-md": ["Inter"],
+                    "headline-sm": ["Poppins"],
+                    "caption": ["Inter"],
+                    "title-lg": ["Poppins"],
+                    "body-lg": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-md": ["30px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "label-md": ["14px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "display-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "caption": ["12px", {"lineHeight": "1.4", "fontWeight": "400"}],
+                    "title-lg": ["20px", {"lineHeight": "1.5", "fontWeight": "500"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8f9ff; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background antialiased overflow-x-hidden">
+<!-- Sidebar Navigation -->
+<aside class="fixed left-0 top-0 h-full w-64 flex flex-col p-md bg-surface-container-low border-r border-outline-variant/20 z-50">
+<div class="mb-xl px-md">
+<div class="mb-md"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAw1EvIjZJFyH-YuJbGZp08iXH8a5C5ZHHS9QbW7gIQ2OXftGa_h0GuppG_7uCJVs7LatKGRFIUjZC309xUnoiO7LwEwGXbnOLaNd-8QtbG4wSOtjJEfeo3jFYmm_zBxZ19jLT420OT6T0cyo0jnAVRfpBXBesYhxTGgXsucEIqyE2WjVqXpyTmvH4JtpWS0BLmkEEzIchTIAGkumrZtU4XTXj7b7c_qljO3QY5LAhBZqWky2hPm3JFdQ" alt="Biznes va tadbirkorlik Oliy maktabi" class="h-14 w-auto object-contain"></div>
+<div class="flex items-center gap-sm mt-md">
+<div class="w-10 h-10 rounded-full overflow-hidden bg-primary-container">
+<img alt="O'qituvchi portreti" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkPbcjN8I8-JMo-MbvfsRtOZ5EaUWrTCAsnSkiOsXtT0w1kkZjK9D33RCawPr_uKVZFoWfmRq-7OxYGXPeNB5dzRNtLG5kwruousRrClJG9hAQn-OrbDRVmvt_XInL6q0UbYSbjXDcHhgKsWgH7KbOdgJc6NX9H7ha2LEiY4CvLbM_SNzwCj9lDcEMISERaiFOPeyJ047HAwNKHKSxGXQ8snGgDPjXcB07gflCpWggEOUytkDJLQpfDQ">
+</div>
+<div>
+<p class="text-label-md font-label-md text-primary">O'qituvchi Portali</p>
+<p class="text-caption text-on-surface-variant">Biznes Ingliz tili kursi</p>
+</div>
+</div>
+</div>
+<nav class="flex-1 space-y-xs overflow-y-auto">
+<a class="flex items-center gap-md bg-secondary-container text-on-secondary-container rounded-lg p-md scale-95 transition-transform duration-150" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="text-label-md font-label-md">Boshqaruv paneli</span>
+</a>
+<a class="flex items-center gap-md text-on-surface-variant hover:bg-surface-container-high transition-all p-md rounded-lg" href="#">
+<span class="material-symbols-outlined">group</span>
+<span class="text-label-md font-label-md">Guruhlar</span>
+</a>
+<a class="flex items-center gap-md text-on-surface-variant hover:bg-surface-container-high transition-all p-md rounded-lg" href="#">
+<span class="material-symbols-outlined">assignment</span>
+<span class="text-label-md font-label-md">Topshiriqlar</span>
+</a>
+<a class="flex items-center gap-md text-on-surface-variant hover:bg-surface-container-high transition-all p-md rounded-lg" href="#">
+<span class="material-symbols-outlined">edit_note</span>
+<span class="text-label-md font-label-md">O'quv rejasi</span>
+</a>
+<a class="flex items-center gap-md text-on-surface-variant hover:bg-surface-container-high transition-all p-md rounded-lg" href="#">
+<span class="material-symbols-outlined">monitoring</span>
+<span class="text-label-md font-label-md">Analitika</span>
+</a>
+</nav>
+<div class="mt-auto space-y-xs border-t border-outline-variant/20 pt-md">
+<button class="w-full flex items-center justify-center gap-sm bg-secondary text-on-secondary py-md rounded-xl font-semibold hover:opacity-90 transition-opacity mb-md">
+<span class="material-symbols-outlined">person_add</span>
+<span class="text-label-md font-label-md">Talaba taklif qilish</span>
+</button>
+<a class="flex items-center gap-md text-on-surface-variant hover:bg-surface-container-high transition-all p-md rounded-lg" href="#">
+<span class="material-symbols-outlined">archive</span>
+<span class="text-label-md font-label-md">Arxiv</span>
+</a>
+<a class="flex items-center gap-md text-on-surface-variant hover:bg-surface-container-high transition-all p-md rounded-lg" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span class="text-label-md font-label-md">Sozlamalar</span>
+</a>
+</div>
+</aside>
+<!-- Top AppBar -->
+<header class="fixed top-0 right-0 left-64 h-20 bg-surface/80 backdrop-blur-xl border-b border-outline-variant/10 flex items-center justify-between px-2xl z-40">
+<div class="flex items-center bg-surface-container rounded-full px-md py-xs w-96 border border-outline-variant/20">
+<span class="material-symbols-outlined text-on-surface-variant">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-body-md w-full ml-xs" placeholder="Talabalar, guruhlar yoki hujjatlarni qidirish..." type="text">
+</div>
+<div class="flex items-center gap-lg">
+<div class="hidden md:flex gap-xl mr-xl">
+<a class="text-label-md font-label-md text-primary border-b-2 border-primary pb-1" href="#">Resurslar markazi</a>
+<a class="text-label-md font-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Platforma holati</a>
+<a class="text-label-md font-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Yordam</a>
+</div>
+<button class="bg-primary text-on-primary px-lg py-sm rounded-full text-label-md font-label-md hover:opacity-80 transition-all">
+                Yangi dars
+            </button>
+<div class="flex items-center gap-md text-on-surface-variant">
+<span class="material-symbols-outlined cursor-pointer hover:text-primary">notifications</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-primary">help</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-primary">settings</span>
+</div>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="ml-64 pt-3xl px-2xl pb-2xl min-h-screen">
+<!-- Welcome Section -->
+<div class="mb-2xl flex justify-between items-end">
+<div>
+<h2 class="text-display-lg font-display-lg text-primary mb-xs">Xush kelibsiz!</h2>
+<p class="text-body-lg text-on-surface-variant">Talabalaringizning o'rtacha ko'rsatkichi shu haftada 4.2% ga yaxshilandi.</p>
+</div>
+<div class="flex gap-md">
+<button class="flex items-center gap-sm border-2 border-primary text-primary px-lg py-sm rounded-xl font-semibold hover:bg-primary/5 transition-colors">
+<span class="material-symbols-outlined">download</span>
+<span class="text-label-md">Hisobotlarni yuklash</span>
+</button>
+</div>
+</div>
+<!-- Overview Stats Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-lg mb-2xl">
+<div class="glass-card p-xl rounded-2xl border-l-4 border-primary">
+<p class="text-label-md font-label-md text-on-surface-variant mb-sm">Jami talabalar</p>
+<div class="flex items-baseline gap-sm">
+<h3 class="text-headline-md font-headline-md text-primary">124</h3>
+<span class="text-caption text-secondary font-semibold">bu oy +4</span>
+</div>
+</div>
+<div class="glass-card p-xl rounded-2xl border-l-4 border-secondary">
+<p class="text-label-md font-label-md text-on-surface-variant mb-sm">Faol guruhlar</p>
+<div class="flex items-baseline gap-sm">
+<h3 class="text-headline-md font-headline-md text-primary">12</h3>
+<span class="text-caption text-on-surface-variant">8 ta tashkilotda</span>
+</div>
+</div>
+<div class="glass-card p-xl rounded-2xl border-l-4 border-tertiary-fixed-dim">
+<p class="text-label-md font-label-md text-on-surface-variant mb-sm">O'rtacha CEFR o'sishi</p>
+<div class="flex items-baseline gap-sm">
+<h3 class="text-headline-md font-headline-md text-secondary">+12.4%</h3>
+<span class="material-symbols-outlined text-secondary text-sm">trending_up</span>
+</div>
+</div>
+<div class="glass-card p-xl rounded-2xl border-l-4 border-error">
+<p class="text-label-md font-label-md text-on-surface-variant mb-sm">Kutilayotgan topshiriqlar</p>
+<div class="flex items-baseline gap-sm">
+<h3 class="text-headline-md font-headline-md text-primary">28</h3>
+<span class="text-caption text-error font-semibold">12 tasi muddati o'tgan</span>
+</div>
+</div>
+</div>
+<!-- High-End Split Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-lg">
+<!-- Student Performance Skill Breakdown (Left 2/3) -->
+<div class="lg:col-span-2 space-y-lg">
+<section class="glass-card p-2xl rounded-3xl">
+<div class="flex justify-between items-center mb-xl">
+<div>
+<h4 class="text-title-lg font-title-lg text-primary">Ko'nikmalar bo'yicha rivojlanish</h4>
+<p class="text-caption text-on-surface-variant">CEFR bo'yicha umumiy samaradorlik ko'rsatkichlari</p>
+</div>
+<select class="bg-surface-container border-none rounded-lg text-label-md text-primary focus:ring-secondary">
+<option>Oxirgi 30 kun</option>
+<option>Oxirgi 6 oy</option>
+</select>
+</div>
+<!-- Visualization Placeholder -->
+<div class="h-64 flex items-end justify-between gap-md relative">
+<div class="absolute inset-0 flex flex-col justify-between pointer-events-none opacity-20">
+<div class="border-b border-outline"></div>
+<div class="border-b border-outline"></div>
+<div class="border-b border-outline"></div>
+<div class="border-b border-outline"></div>
+</div>
+<div class="flex-1 flex flex-col items-center gap-sm group">
+<div class="w-full bg-secondary-container/40 rounded-t-xl relative overflow-hidden flex items-end" style="height: 85%">
+<div class="w-full bg-secondary transition-all duration-700 hover:opacity-80" style="height: 70%;"></div>
+</div>
+<span class="text-label-md font-label-md text-primary">Gapirish</span>
+</div>
+<div class="flex-1 flex flex-col items-center gap-sm group">
+<div class="w-full bg-secondary-container/40 rounded-t-xl relative overflow-hidden flex items-end" style="height: 85%">
+<div class="w-full bg-secondary transition-all duration-700 hover:opacity-80" style="height: 45%;"></div>
+</div>
+<span class="text-label-md font-label-md text-primary">Yozish</span>
+</div>
+<div class="flex-1 flex flex-col items-center gap-sm group">
+<div class="w-full bg-secondary-container/40 rounded-t-xl relative overflow-hidden flex items-end" style="height: 85%">
+<div class="w-full bg-secondary transition-all duration-700 hover:opacity-80" style="height: 92%;"></div>
+</div>
+<span class="text-label-md font-label-md text-primary">O'qish</span>
+</div>
+<div class="flex-1 flex flex-col items-center gap-sm group">
+<div class="w-full bg-secondary-container/40 rounded-t-xl relative overflow-hidden flex items-end" style="height: 85%">
+<div class="w-full bg-secondary transition-all duration-700 hover:opacity-80" style="height: 60%;"></div>
+</div>
+<span class="text-label-md font-label-md text-primary">Eshitish</span>
+</div>
+</div>
+</section>
+<!-- Active Groups Table -->
+<section class="glass-card rounded-3xl overflow-hidden">
+<div class="p-xl border-b border-outline-variant/10 flex justify-between items-center">
+<h4 class="text-title-lg font-title-lg text-primary">Faol guruhlar</h4>
+<button class="text-secondary text-label-md font-label-md hover:underline">Barchasini ko'rish</button>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead class="bg-surface-container-low text-on-surface-variant text-label-md uppercase tracking-wider">
+<tr>
+<th class="px-xl py-md">Guruh nomi</th>
+<th class="px-xl py-md">Talabalar</th>
+<th class="px-xl py-md">Oxirgi dars</th>
+<th class="px-xl py-md">Joriy bo'lim</th>
+<th class="px-xl py-md">Holati</th>
+</tr>
+</thead>
+<tbody class="text-body-md divide-y divide-outline-variant/10">
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="px-xl py-lg font-semibold text-primary">Moliya rahbarlari (A)</td>
+<td class="px-xl py-lg text-on-surface-variant">8</td>
+<td class="px-xl py-lg text-on-surface-variant">24-okt, 2023</td>
+<td class="px-xl py-lg text-on-surface-variant">Choraklik prognozlash</td>
+<td class="px-xl py-lg">
+<span class="bg-secondary-container text-on-secondary-container text-caption px-md py-xs rounded-full font-bold">Reja bo'yicha</span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="px-xl py-lg font-semibold text-primary">Sotuv yetakchilari</td>
+<td class="px-xl py-lg text-on-surface-variant">12</td>
+<td class="px-xl py-lg text-on-surface-variant">23-okt, 2023</td>
+<td class="px-xl py-lg text-on-surface-variant">Muzokara taktikasi</td>
+<td class="px-xl py-lg">
+<span class="bg-tertiary-fixed text-on-tertiary-fixed text-caption px-md py-xs rounded-full font-bold">Ko'rib chiqish kerak</span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="px-xl py-lg font-semibold text-primary">Texnik muhandislik (YI)</td>
+<td class="px-xl py-lg text-on-surface-variant">6</td>
+<td class="px-xl py-lg text-on-surface-variant">25-okt, 2023</td>
+<td class="px-xl py-lg text-on-surface-variant">Agile muloqot</td>
+<td class="px-xl py-lg">
+<span class="bg-secondary-container text-on-secondary-container text-caption px-md py-xs rounded-full font-bold">Reja bo'yicha</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</div>
+<!-- Sidebar Contextual Area (Right 1/3) -->
+<div class="space-y-lg">
+<!-- Upcoming Schedule -->
+<section class="glass-card p-xl rounded-3xl">
+<h4 class="text-title-lg font-title-lg text-primary mb-xl flex items-center gap-sm">
+<span class="material-symbols-outlined">calendar_today</span>
+                        Bugungi jonli darslar
+                    </h4>
+<div class="space-y-lg">
+<div class="flex items-start gap-md p-md bg-surface-container-low rounded-2xl hover:shadow-md transition-shadow">
+<div class="bg-primary-container text-on-primary-container rounded-xl px-md py-xs text-center min-w-[70px]">
+<p class="text-label-md font-bold">14:00</p>
+<p class="text-caption">GMT+5</p>
+</div>
+<div class="flex-1">
+<p class="text-label-md font-semibold text-primary">Moliya rahbarlari</p>
+<p class="text-caption text-on-surface-variant mb-md">4-bo'lim: Xavflarni tahlil qilish</p>
+<button class="w-full bg-secondary text-on-secondary py-xs rounded-lg text-label-md font-bold hover:opacity-90">Darsni boshlash</button>
+</div>
+</div>
+<div class="flex items-start gap-md p-md border border-outline-variant/20 rounded-2xl opacity-60">
+<div class="bg-surface-container-high text-on-surface-variant rounded-xl px-md py-xs text-center min-w-[70px]">
+<p class="text-label-md font-bold">16:30</p>
+<p class="text-caption">GMT+5</p>
+</div>
+<div class="flex-1">
+<p class="text-label-md font-semibold text-primary">HR global jamoasi</p>
+<p class="text-caption text-on-surface-variant">Ishga qabul qilish sintaksisi</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Recent Activity / Submissions -->
+<section class="glass-card p-xl rounded-3xl">
+<h4 class="text-title-lg font-title-lg text-primary mb-xl">Oxirgi topshiriqlar</h4>
+<div class="space-y-xl">
+<div class="flex gap-md items-center">
+<div class="w-12 h-12 rounded-full overflow-hidden shrink-0">
+<img alt="Talaba portreti" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrlVyULqBeMgh5iTumjpqENG3toV2h03jwFoQ1af9tOfpkeO_5V92w_FGvj7rjDE9SY2ZfSzyeaRXQ1lh7_6dhbeLXnAYMfFPoTA8VdUKto18eMtaPVHqtMP57YHIQIZPYFwonxd1MVoaFAL6yWKtAbGaAAFyn72atEYEi-_7hzuGg8hAtNZH2hHV8K-rW2trWcZWYw_81O0VnpBZ3S0cDRcYN_t9lnA8fbIio2vOSjVb2YRwI5Cz4-A">
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-start">
+<p class="text-label-md font-bold text-primary">Marco Rossi</p>
+<span class="text-caption bg-surface-container px-sm py-[2px] rounded text-primary font-bold">C1</span>
+</div>
+<p class="text-caption text-on-surface-variant truncate w-40">Moliya sohasida AI etikasi</p>
+</div>
+<button class="bg-primary text-on-primary px-md py-sm rounded-lg text-caption font-bold hover:opacity-80">Tekshirish</button>
+</div>
+<div class="flex gap-md items-center">
+<div class="w-12 h-12 rounded-full overflow-hidden shrink-0">
+<img alt="Talaba portreti" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdOE6nAKBjVQcJskFKGLsZqUtyKZTfEJEIsGXXWg4AMs2eG5Z_yUm-7plHByG36BHyXpFQzNFHSPT_6fvnMnVh58EA_93OXrDzuCqA66BdJK1VA6fWH6TK6CgrcAwHu0QrC13DIqkzwvJ69VkWbJxlkk9B1R4vVspYi0UJdpRa585OP0tAZlskh2tT64fqFWCTJcFPHnZZcc6byRrheL05qdD9yFJiGOwgcdgYBRYMcn8Mscw8kmhtMA">
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-start">
+<p class="text-label-md font-bold text-primary">Elena Chen</p>
+<span class="text-caption bg-surface-container px-sm py-[2px] rounded text-primary font-bold">B2+</span>
+</div>
+<p class="text-caption text-on-surface-variant truncate w-40">Barqarorlik bo'yicha prezentatsiya</p>
+</div>
+<button class="bg-primary text-on-primary px-md py-sm rounded-lg text-caption font-bold hover:opacity-80">Tekshirish</button>
+</div>
+<div class="flex gap-md items-center">
+<div class="w-12 h-12 rounded-full overflow-hidden shrink-0">
+<img alt="Talaba portreti" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiCGarg4oLK_feIHxxTD1j7jJOthnkukC02B8DnIokj9a9jOp62HhAeI7wsko8BiYYUcUxgcK-z2PNycWCRoXjY-p3Fj1ngLeP6OoLTMKZtEXHDAm5ZF9og2-L6Oxen8Pb5V29rhSjQIZgt4UDKooDmY88vv-ssqHnUOdgOFNXiTtIKwDJwTTZaUPSNUOrkVU6UGEUKy0XjdqE1k8hqaxhNt20oo4lFeSTEYEGWxQYqsb9Wl-Id16pDQ">
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-start">
+<p class="text-label-md font-bold text-primary">Amir Khan</p>
+<span class="text-caption bg-surface-container px-sm py-[2px] rounded text-primary font-bold">C2</span>
+</div>
+<p class="text-caption text-on-surface-variant truncate w-40">Muzokaralar kundaligi</p>
+</div>
+<button class="bg-primary text-on-primary px-md py-sm rounded-lg text-caption font-bold hover:opacity-80">Tekshirish</button>
+</div>
+</div>
+<button class="w-full mt-xl py-md border-2 border-outline-variant text-on-surface-variant rounded-xl text-label-md font-semibold hover:bg-surface-container-low transition-colors">
+                        Topshiriqlar navbatini ko'rish (28)
+                    </button>
+</section>
+<!-- Resource Link -->
+<div class="bg-primary rounded-3xl p-xl relative overflow-hidden">
+<div class="relative z-10">
+<h5 class="text-headline-sm text-on-primary font-bold mb-sm">Yangi CEFR standartlari</h5>
+<p class="text-caption text-primary-fixed mb-xl">O'quv rejangizni 2024-yilgi yangi biznes mahorati mezonlari bilan yangilang.</p>
+<a class="text-secondary-fixed font-bold text-label-md flex items-center gap-xs" href="#">
+                            Qo'llanmani o'qish
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<div class="absolute -right-10 -bottom-10 w-40 h-40 bg-secondary/20 rounded-full blur-3xl"></div>
+</div>
+</div>
+</div>
+</main>
+<!-- Floating Action Button -->
+<button class="fixed bottom-lg right-lg w-14 h-14 bg-secondary text-on-secondary rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition-transform z-50">
+<span class="material-symbols-outlined">add</span>
+</button>
+<script>
+        // Micro-interaction for table rows and hover states
+        document.querySelectorAll('tr').forEach(row => {
+            row.addEventListener('mouseenter', () => {
+                row.style.cursor = 'pointer';
+            });
+        });
+
+        // Simple animation trigger for chart bars
+        window.addEventListener('load', () => {
+            const bars = document.querySelectorAll('.bg-secondary');
+            bars.forEach(bar => {
+                const finalHeight = bar.style.height;
+                bar.style.height = '0';
+                setTimeout(() => {
+                    bar.style.height = finalHeight;
+                }, 100);
+            });
+        });
+    </script>
+
+
+</body></html>

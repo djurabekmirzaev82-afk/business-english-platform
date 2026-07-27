@@ -1,0 +1,274 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Adaptive Placement Test | Business English Pro</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Poppins:wght@100..900&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary": "#006c49",
+                        "surface-container-low": "#eff4ff",
+                        "tertiary-fixed": "#ffddb8",
+                        "on-primary-fixed-variant": "#1f4a6c",
+                        "on-primary-container": "#7fa7cd",
+                        "on-tertiary-fixed-variant": "#653e00",
+                        "on-secondary-container": "#00714d",
+                        "primary-container": "#0b3c5d",
+                        "primary": "#00263f",
+                        "surface-tint": "#396285",
+                        "surface-container-lowest": "#ffffff",
+                        "on-background": "#0b1c30",
+                        "tertiary-fixed-dim": "#ffb95f",
+                        "on-primary": "#ffffff",
+                        "inverse-surface": "#213145",
+                        "primary-fixed": "#cee5ff",
+                        "on-secondary-fixed": "#002113",
+                        "surface": "#f8f9ff",
+                        "secondary-container": "#6cf8bb",
+                        "outline": "#72777e",
+                        "surface-container-high": "#dce9ff",
+                        "on-tertiary": "#ffffff",
+                        "on-surface-variant": "#42474e",
+                        "on-error": "#ffffff",
+                        "outline-variant": "#c2c7ce",
+                        "on-secondary-fixed-variant": "#005236",
+                        "background": "#f8f9ff",
+                        "primary-fixed-dim": "#a3cbf2",
+                        "on-secondary": "#ffffff",
+                        "tertiary": "#361f00",
+                        "inverse-on-surface": "#eaf1ff",
+                        "error": "#ba1a1a",
+                        "error-container": "#ffdad6",
+                        "tertiary-container": "#533200",
+                        "on-tertiary-fixed": "#2a1700",
+                        "on-error-container": "#93000a",
+                        "on-primary-fixed": "#001d32",
+                        "surface-container-highest": "#d3e4fe",
+                        "on-tertiary-container": "#e39100",
+                        "secondary-fixed-dim": "#4edea3",
+                        "on-surface": "#0b1c30",
+                        "surface-container": "#e5eeff",
+                        "surface-bright": "#f8f9ff",
+                        "surface-variant": "#d3e4fe",
+                        "surface-dim": "#cbdbf5",
+                        "secondary-fixed": "#6ffbbe",
+                        "inverse-primary": "#a3cbf2"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "md": "16px",
+                        "2xl": "48px",
+                        "3xl": "64px",
+                        "xs": "4px",
+                        "sm": "8px",
+                        "lg": "24px",
+                        "container-max": "1280px",
+                        "gutter": "24px",
+                        "base": "4px",
+                        "xl": "32px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Poppins"],
+                        "body-lg": ["Inter"],
+                        "display-lg-mobile": ["Poppins"],
+                        "body-md": ["Inter"],
+                        "caption": ["Inter"],
+                        "headline-sm": ["Poppins"],
+                        "title-lg": ["Poppins"],
+                        "display-lg": ["Poppins"],
+                        "label-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["30px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "display-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "caption": ["12px", {"lineHeight": "1.4", "fontWeight": "400"}],
+                        "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                        "title-lg": ["20px", {"lineHeight": "1.5", "fontWeight": "500"}],
+                        "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "label-md": ["14px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+        .timer-glow {
+            text-shadow: 0 0 8px rgba(186, 26, 26, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md min-h-screen flex flex-col overflow-hidden">
+<!-- TopNavBar Implementation -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-sm">
+<div class="flex justify-between items-center w-full px-lg py-sm max-w-container-max mx-auto">
+<div class="flex items-center gap-md">
+<img alt="Business English Pro Logo" class="h-10 w-10 rounded-lg object-contain" src="https://lh3.googleusercontent.com/aida/AP1WRLsqhYDXdsfIw8Z7HtvsPCYv1XFfOoEaxyL3gfAaENb3QKJNbH9lJLE8ZZ6lkG5bgn9dQhyUzqh4ZTcepb7hpRGsuv1ajlI89pOvVqvGLm4jqJzW0JTIpaoKAWthxs0bFemPJ3oU-lNmNjZ2WPIx8cqUZYKvWXluVoYGZg4W_dnsDJ2wrGIkWn9KISo5FkXumnJNEvzjb6iN6a3QFI-CTj5FrRZUIff5va6vurzVXSWCl7_TyQpVJkUnHEDO">
+<div class="hidden md:block">
+<h1 class="font-title-lg text-title-lg font-bold text-primary">Biznes va tadbirkorlik Oliy maktabi Surxondaryo hududiy filiali</h1>
+<p class="font-caption text-caption text-on-surface-variant">Biznes Ingliz tili kursi</p>
+</div>
+</div>
+<div class="flex items-center gap-xl">
+<!-- Question Progress Indicator -->
+<div class="flex flex-col items-center">
+<span class="font-label-md text-label-md text-on-surface-variant tracking-wider">PROGRESS</span>
+<span class="font-title-lg text-title-lg font-bold text-primary">Question 8 <span class="text-on-surface-variant/40">/ 45</span></span>
+</div>
+<!-- Timer -->
+<div class="flex flex-col items-center px-lg border-l border-outline-variant">
+<span class="font-label-md text-label-md text-on-surface-variant tracking-wider">TIME REMAINING</span>
+<div class="flex items-center gap-xs font-title-lg text-title-lg font-bold text-error timer-glow">
+<span class="material-symbols-outlined text-[20px]">timer</span>
+<span id="countdown" class="">26:07</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Progress Bar (Visual) -->
+<div class="w-full h-1 bg-surface-container">
+<div class="h-full bg-secondary-container w-[17.7%] transition-all duration-1000 ease-in-out"></div>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-1 mt-[84px] mb-[80px] w-full max-w-container-max mx-auto px-lg grid grid-cols-1 md:grid-cols-12 gap-lg overflow-hidden">
+<!-- Left Column: Reading Passage -->
+<section class="md:col-span-7 lg:col-span-8 flex flex-col h-full py-md overflow-hidden">
+<div class="bg-white rounded-xl shadow-sm border border-outline-variant/30 flex flex-col h-full">
+<div class="p-lg border-b border-outline-variant/20 flex justify-between items-center bg-surface-container-low/50">
+<h2 class="font-headline-sm text-headline-sm text-primary">Case Study: Strategic Market Entry</h2>
+<div class="flex gap-sm">
+<button class="p-2 hover:bg-surface-container rounded-full transition-colors material-symbols-outlined text-on-surface-variant" title="Zoom In">zoom_in</button>
+<button class="p-2 hover:bg-surface-container rounded-full transition-colors material-symbols-outlined text-on-surface-variant" title="Highlighter">stylus</button>
+</div>
+</div>
+<div class="p-lg overflow-y-auto scrollbar-hide flex-1 space-y-md leading-relaxed text-on-surface">
+<p class="font-bold text-primary-container">Executive Summary</p>
+<p class="">The proposed expansion into the Southeast Asian market presents a multifaceted strategic challenge for GlobalLogistics Corp. While the current fiscal environment favors aggressive diversification, the nuances of regional regulatory frameworks require a meticulously calibrated approach. Preliminary market analysis suggests that a purely organic growth model may be insufficient to gain meaningful traction within the first three quarters.</p>
+<p class="">Instead, a hybrid model incorporating strategic alliances with localized Tier-2 providers is recommended. These "Tactical Partnerships" offer two primary advantages: expedited navigation of municipal zoning laws and immediate access to established last-mile delivery networks. However, such an approach necessitates a sophisticated governance structure to mitigate brand dilution risks.</p>
+<p class="italic text-on-surface-variant bg-surface-container-low p-md border-l-4 border-secondary rounded-r-lg">"The risk of inertia in a high-velocity market often outweighs the capital risks of a slightly premature entry, provided the exit barriers remain manageable." - Director of Strategy</p>
+<p class="">Stakeholders must also weigh the implications of the fluctuating currency corridors. The recent volatility in regional exchange rates suggests that all initial capital expenditures should be hedged against the USD. Furthermore, the human capital component cannot be overlooked; the linguistic and cultural synthesis required for operational synergy demands a dedicated integration team for the duration of the 18-month pilot phase.</p>
+<p class="">In conclusion, the 'Strategic Market Entry' initiative is viable but contingent upon the agility of the management team to pivot based on real-time feedback loops from the localized hubs. Failure to establish these loops will inevitably lead to a disconnect between the corporate headquarters and the regional operational reality.</p>
+</div>
+</div>
+</section>
+<!-- Right Column: Interactive Questions -->
+<aside class="md:col-span-5 lg:col-span-4 flex flex-col h-full py-md">
+<div class="bg-surface-container-low rounded-xl shadow-md border border-outline-variant/30 flex flex-col h-full">
+<div class="p-lg">
+<div class="flex items-center gap-sm mb-sm">
+<span class="bg-primary text-on-primary text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-widest">Multiple Choice</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary mb-lg">Based on the text, what is the primary rationale for suggesting a "hybrid model" of entry?</h3>
+<div class="space-y-md">
+<!-- Option A -->
+<label class="group flex items-start gap-md p-md bg-white border border-outline-variant rounded-xl cursor-pointer hover:border-secondary transition-all hover:shadow-md active:scale-[0.98]">
+<input class="mt-1 text-secondary focus:ring-secondary h-4 w-4 border-outline-variant" name="answer" type="radio">
+<span class="font-body-md text-on-surface leading-snug">To capitalize on the favorable fiscal environment through aggressive, organic expansion strategies.</span>
+</label>
+<!-- Option B -->
+<label class="group flex items-start gap-md p-md bg-white border-2 border-secondary/20 rounded-xl cursor-pointer hover:border-secondary transition-all hover:shadow-md active:scale-[0.98]">
+<input checked="" class="mt-1 text-secondary focus:ring-secondary h-4 w-4 border-outline-variant" name="answer" type="radio">
+<span class="font-body-md text-on-surface leading-snug">To accelerate entry by utilizing the local regulatory expertise and infrastructure of existing providers.</span>
+</label>
+<!-- Option C -->
+<label class="group flex items-start gap-md p-md bg-white border border-outline-variant rounded-xl cursor-pointer hover:border-secondary transition-all hover:shadow-md active:scale-[0.98]">
+<input class="mt-1 text-secondary focus:ring-secondary h-4 w-4 border-outline-variant" name="answer" type="radio">
+<span class="font-body-md text-on-surface leading-snug">To mitigate the risks associated with brand dilution in high-velocity emerging markets.</span>
+</label>
+<!-- Option D -->
+<label class="group flex items-start gap-md p-md bg-white border border-outline-variant rounded-xl cursor-pointer hover:border-secondary transition-all hover:shadow-md active:scale-[0.98]">
+<input class="mt-1 text-secondary focus:ring-secondary h-4 w-4 border-outline-variant" name="answer" type="radio">
+<span class="font-body-md text-on-surface leading-snug">To focus exclusively on last-mile delivery networks while bypassing municipal zoning laws.</span>
+</label>
+</div>
+</div>
+<div class="mt-auto p-lg bg-surface-container-high/30">
+<div class="flex items-center gap-sm text-on-surface-variant/50 cursor-not-allowed">
+<span class="material-symbols-outlined">smart_toy</span>
+<span class="font-label-md text-label-md">Explain with AI (Disabled for Tests)</span>
+</div>
+</div>
+</div>
+</aside>
+</main>
+<!-- Footer Action Bar -->
+<footer class="fixed bottom-0 w-full z-50 bg-primary shadow-[0_-4px_20px_rgba(0,0,0,0.1)]">
+<div class="flex justify-between items-center w-full px-lg py-md max-w-container-max mx-auto">
+<div class="flex items-center gap-md">
+<button class="flex items-center gap-xs font-label-md text-label-md text-on-primary/70 hover:text-on-primary transition-colors py-2 px-md border border-on-primary/20 rounded-lg group">
+<span class="material-symbols-outlined text-[18px] group-active:scale-90">flag</span>
+                    FLAG FOR REVIEW
+                </button>
+</div>
+<div class="flex items-center gap-md">
+<button class="hidden md:flex items-center gap-xs font-label-md text-label-md text-on-primary/70 hover:text-on-primary transition-colors py-2 px-md">
+<span class="material-symbols-outlined text-[18px]">keyboard_arrow_left</span>
+                    PREVIOUS
+                </button>
+<button class="flex items-center gap-xs font-label-md text-label-md bg-secondary text-on-primary px-xl py-3 rounded-lg shadow-lg hover:bg-secondary/90 transition-all active:scale-95 group">
+                    NEXT QUESTION
+                    <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">keyboard_arrow_right</span>
+</button>
+</div>
+</div>
+</footer>
+<!-- Overlay for Focus Mode interaction (Atmospheric) -->
+<div class="fixed inset-0 pointer-events-none border-[12px] border-primary/5 z-[60]"></div>
+<script>
+        // Micro-interaction for the timer
+        let timeLeft = 28 * 60 + 45;
+        const timerElement = document.getElementById('countdown');
+
+        function updateTimer() {
+            const minutes = Math.floor(timeLeft / 60);
+            const seconds = timeLeft % 60;
+            timerElement.textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+            
+            if (timeLeft <= 300) { // Last 5 minutes
+                timerElement.classList.add('animate-pulse');
+            }
+            
+            if (timeLeft > 0) {
+                timeLeft--;
+            }
+        }
+
+        setInterval(updateTimer, 1000);
+
+        // Simple highlight function (visual only)
+        document.querySelectorAll('p').forEach(p => {
+            p.addEventListener('mouseup', function() {
+                const selection = window.getSelection();
+                if (selection.toString().length > 0) {
+                    console.log('Text selected for potential highlight: ', selection.toString());
+                }
+            });
+        });
+    </script>
+
+
+</body></html>

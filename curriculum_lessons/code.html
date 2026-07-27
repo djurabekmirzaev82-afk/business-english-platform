@@ -1,0 +1,476 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Course Curriculum | Business English Pro</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Poppins:wght@500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 10px;
+        }
+        .active-tab-indicator {
+            view-transition-name: active-tab;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface": "#f8f9ff",
+                        "tertiary-container": "#533200",
+                        "on-primary-container": "#7fa7cd",
+                        "on-background": "#0b1c30",
+                        "primary": "#00263f",
+                        "surface-dim": "#cbdbf5",
+                        "surface-container-high": "#dce9ff",
+                        "on-surface": "#0b1c30",
+                        "inverse-primary": "#a3cbf2",
+                        "secondary-container": "#6cf8bb",
+                        "on-primary": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "primary-container": "#0b3c5d",
+                        "on-tertiary-fixed-variant": "#653e00",
+                        "inverse-on-surface": "#eaf1ff",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed": "#2a1700",
+                        "surface-container-low": "#eff4ff",
+                        "tertiary-fixed": "#ffddb8",
+                        "on-primary-fixed": "#001d32",
+                        "on-secondary-container": "#00714d",
+                        "surface-tint": "#396285",
+                        "on-primary-fixed-variant": "#1f4a6c",
+                        "secondary-fixed-dim": "#4edea3",
+                        "error": "#ba1a1a",
+                        "on-tertiary-container": "#e39100",
+                        "on-surface-variant": "#42474e",
+                        "on-secondary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-surface": "#213145",
+                        "on-error-container": "#93000a",
+                        "tertiary": "#361f00",
+                        "secondary": "#006c49",
+                        "surface-container": "#e5eeff",
+                        "error-container": "#ffdad6",
+                        "primary-fixed-dim": "#a3cbf2",
+                        "outline": "#72777e",
+                        "on-secondary-fixed-variant": "#005236",
+                        "outline-variant": "#c2c7ce",
+                        "surface-variant": "#d3e4fe",
+                        "surface-bright": "#f8f9ff",
+                        "on-secondary-fixed": "#002113",
+                        "surface-container-highest": "#d3e4fe",
+                        "primary-fixed": "#cee5ff",
+                        "secondary-fixed": "#6ffbbe",
+                        "tertiary-fixed-dim": "#ffb95f",
+                        "background": "#f8f9ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "3xl": "64px",
+                        "xs": "4px",
+                        "gutter": "24px",
+                        "xl": "32px",
+                        "base": "4px",
+                        "container-max": "1280px",
+                        "md": "16px",
+                        "2xl": "48px",
+                        "lg": "24px",
+                        "sm": "8px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Inter"],
+                        "title-lg": ["Poppins"],
+                        "headline-sm": ["Poppins"],
+                        "body-lg": ["Inter"],
+                        "caption": ["Inter"],
+                        "display-lg": ["Poppins"],
+                        "display-lg-mobile": ["Poppins"],
+                        "body-md": ["Inter"],
+                        "headline-md": ["Poppins"]
+                    },
+                    "fontSize": {
+                        "label-md": ["14px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "title-lg": ["20px", {"lineHeight": "1.5", "fontWeight": "500"}],
+                        "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "caption": ["12px", {"lineHeight": "1.4", "fontWeight": "400"}],
+                        "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "display-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-md": ["30px", {"lineHeight": "1.3", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-surface text-on-surface font-body-md min-h-screen flex flex-col">
+<!-- Top Navigation Bar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-sm h-16">
+<div class="flex justify-between items-center w-full px-lg py-sm max-w-container-max mx-auto h-full">
+<div class="flex items-center gap-xl">
+<span class="text-title-lg font-title-lg font-bold text-primary">Biznes va tadbirkorlik Oliy maktabi Surxondaryo hududiy filiali Biznes Ingliz tili kursi</span>
+<nav class="hidden md:flex items-center gap-lg">
+<a class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-200 font-body-md text-body-md" href="#">Dashboard</a>
+<a class="text-primary font-bold border-b-2 border-secondary pb-1 font-body-md text-body-md" href="#">Curriculum</a>
+<a class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-200 font-body-md text-body-md" href="#">Live Sessions</a>
+</nav>
+</div>
+<div class="flex items-center gap-md">
+<button class="hidden lg:block bg-secondary text-on-secondary px-lg py-xs rounded-full font-label-md text-label-md hover:bg-opacity-90 transition-all">Upgrade to Pro</button>
+<div class="flex items-center gap-sm">
+<button class="p-sm text-on-surface-variant cursor-pointer active:scale-95"><span class="material-symbols-outlined">notifications</span></button>
+<button class="p-sm text-on-surface-variant cursor-pointer active:scale-95"><span class="material-symbols-outlined">settings</span></button>
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-primary-container ml-sm">
+<img class="w-full h-full object-cover" data-alt="A professional studio portrait of a modern executive student with a confident smile, wearing high-end business attire. The lighting is soft and directional, creating a clean corporate aesthetic with a blurred office background in light blue and white tones. The overall look is polished, high-resolution, and premium." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfekk8LjfpP5876MbIUykHSv3DENxOozAoGtwEz9YwjgWlVmB6vAsR0tUezEfP0Qg2ey2oIAPpWfM4nxQhvtw3fM1mUoRe6C-_GDOUz5jjz9R_zwk0rWUUGAfjrQQ0BcPqUD1cs_2J0IbM9skCzLswRNYIX73I8OxBLmOuITkM6RgFKiqqlhTYzI3cdtgOVX6NvOLNhjWR6HPCnpq-9Mu1Hj1edwODJgYkSRp9PtM9yM1_DobF1LXbWw">
+</div>
+</div>
+</div>
+</div>
+</header>
+<!-- Side Navigation (Mobile Hidden) -->
+<aside class="hidden md:flex fixed left-0 top-16 h-[calc(100vh-64px)] w-64 bg-surface-container-low/90 backdrop-blur-xl z-40 flex-col py-xl px-md shadow-md">
+<div class="mb-xl">
+<p class="text-headline-sm font-headline-sm text-primary">Biznes va tadbirkorlik Oliy maktabi Surxondaryo hududiy filiali Biznes Ingliz tili kursi</p>
+<p class="text-label-md font-label-md text-on-surface-variant">C1 Advanced Level</p>
+</div>
+<nav class="flex-1 space-y-sm">
+<a class="bg-secondary-container text-on-secondary-container rounded-lg p-3 flex items-center gap-3 transition-all duration-300" href="#">
+<span class="material-symbols-outlined">school</span>
+<span class="font-label-md text-label-md">My Learning</span>
+</a>
+<a class="text-on-surface-variant p-3 flex items-center gap-3 hover:bg-surface-container-high transition-all duration-300" href="#">
+<span class="material-symbols-outlined">terminal</span>
+<span class="font-label-md text-label-md">Grammar Lab</span>
+</a>
+<a class="text-on-surface-variant p-3 flex items-center gap-3 hover:bg-surface-container-high transition-all duration-300" href="#">
+<span class="material-symbols-outlined">translate</span>
+<span class="font-label-md text-label-md">Vocabulary</span>
+</a>
+<a class="text-on-surface-variant p-3 flex items-center gap-3 hover:bg-surface-container-high transition-all duration-300" href="#">
+<span class="material-symbols-outlined">smart_toy</span>
+<span class="font-label-md text-label-md">AI Tutor</span>
+</a>
+<a class="text-on-surface-variant p-3 flex items-center gap-3 hover:bg-surface-container-high transition-all duration-300" href="#">
+<span class="material-symbols-outlined">folder_open</span>
+<span class="font-label-md text-label-md">Resources</span>
+</a>
+</nav>
+<div class="mt-auto pt-lg border-t border-outline-variant space-y-sm">
+<button class="w-full bg-primary text-on-primary py-sm rounded-xl font-label-md text-label-md mb-md">Schedule Assessment</button>
+<a class="text-on-surface-variant p-3 flex items-center gap-3 hover:bg-surface-container-high transition-all" href="#">
+<span class="material-symbols-outlined">help</span>
+<span class="font-label-md text-label-md">Support</span>
+</a>
+</div>
+</aside>
+<!-- Main Content Area -->
+<main class="flex-1 md:ml-64 mt-16 p-lg lg:p-2xl overflow-y-auto">
+<!-- Breadcrumbs -->
+<nav class="flex items-center gap-sm text-label-md font-label-md text-on-surface-variant mb-xl">
+<a class="hover:text-primary transition-colors" href="#">Catalog</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Curriculum</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary font-bold">Executive Leadership</span>
+</nav>
+<!-- CEFR Levels Grid -->
+<section class="mb-3xl">
+<div class="flex justify-between items-end mb-lg">
+<div>
+<h1 class="text-display-lg font-display-lg text-primary mb-xs">Learning Roadmap</h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant">Global Standard CEFR Alignment</p>
+</div>
+<div class="flex gap-sm">
+<span class="px-md py-xs bg-secondary-container text-on-secondary-container rounded-full text-label-md font-label-md">Current: C1</span>
+</div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-lg">
+<!-- A1 Level -->
+<div class="glass-card p-lg rounded-2xl flex flex-col items-center text-center group cursor-pointer hover:shadow-lg transition-all duration-300">
+<div class="relative w-16 h-16 mb-md">
+<svg class="w-full h-full transform -rotate-90">
+<circle class="text-surface-container-highest" cx="32" cy="32" fill="transparent" r="28" stroke="currentColor" stroke-width="4"></circle>
+<circle class="text-secondary" cx="32" cy="32" fill="transparent" r="28" stroke="currentColor" stroke-dasharray="176" stroke-dashoffset="0" stroke-width="4"></circle>
+</svg>
+<span class="absolute inset-0 flex items-center justify-center font-bold text-primary">A1</span>
+</div>
+<h3 class="font-title-lg text-title-lg mb-xs">Beginner</h3>
+<p class="text-caption font-caption text-on-surface-variant">100% Complete</p>
+</div>
+<!-- A2 Level -->
+<div class="glass-card p-lg rounded-2xl flex flex-col items-center text-center group cursor-pointer hover:shadow-lg transition-all duration-300">
+<div class="relative w-16 h-16 mb-md">
+<svg class="w-full h-full transform -rotate-90">
+<circle class="text-surface-container-highest" cx="32" cy="32" fill="transparent" r="28" stroke="currentColor" stroke-width="4"></circle>
+<circle class="text-secondary" cx="32" cy="32" fill="transparent" r="28" stroke="currentColor" stroke-dasharray="176" stroke-dashoffset="0" stroke-width="4"></circle>
+</svg>
+<span class="absolute inset-0 flex items-center justify-center font-bold text-primary">A2</span>
+</div>
+<h3 class="font-title-lg text-title-lg mb-xs">Elementary</h3>
+<p class="text-caption font-caption text-on-surface-variant">100% Complete</p>
+</div>
+<!-- B1 Level -->
+<div class="glass-card p-lg rounded-2xl flex flex-col items-center text-center group cursor-pointer hover:shadow-lg transition-all duration-300">
+<div class="relative w-16 h-16 mb-md">
+<svg class="w-full h-full transform -rotate-90">
+<circle class="text-surface-container-highest" cx="32" cy="32" fill="transparent" r="28" stroke="currentColor" stroke-width="4"></circle>
+<circle class="text-secondary" cx="32" cy="32" fill="transparent" r="28" stroke="currentColor" stroke-dasharray="176" stroke-dashoffset="44" stroke-width="4"></circle>
+</svg>
+<span class="absolute inset-0 flex items-center justify-center font-bold text-primary">B1</span>
+</div>
+<h3 class="font-title-lg text-title-lg mb-xs">Intermediate</h3>
+<p class="text-caption font-caption text-on-surface-variant">75% Complete</p>
+</div>
+<!-- B2 Level -->
+<div class="glass-card p-lg rounded-2xl flex flex-col items-center text-center border-2 border-primary shadow-lg ring-4 ring-primary/5">
+<div class="relative w-16 h-16 mb-md">
+<svg class="w-full h-full transform -rotate-90">
+<circle class="text-surface-container-highest" cx="32" cy="32" fill="transparent" r="28" stroke="currentColor" stroke-width="4"></circle>
+<circle class="text-secondary" cx="32" cy="32" fill="transparent" r="28" stroke="currentColor" stroke-dasharray="176" stroke-dashoffset="110" stroke-width="4"></circle>
+</svg>
+<span class="absolute inset-0 flex items-center justify-center font-bold text-primary">B2</span>
+</div>
+<h3 class="font-title-lg text-title-lg mb-xs">Upper Inter.</h3>
+<p class="text-caption font-caption text-on-surface-variant">32% Complete</p>
+</div>
+<!-- C1 Level -->
+<div class="glass-card p-lg rounded-2xl flex flex-col items-center text-center opacity-70">
+<div class="relative w-16 h-16 mb-md">
+<svg class="w-full h-full transform -rotate-90">
+<circle class="text-surface-container-highest" cx="32" cy="32" fill="transparent" r="28" stroke="currentColor" stroke-width="4"></circle>
+</svg>
+<span class="absolute inset-0 flex items-center justify-center font-bold text-on-surface-variant">C1</span>
+</div>
+<h3 class="font-title-lg text-title-lg mb-xs text-on-surface-variant">Advanced</h3>
+<p class="text-caption font-caption text-on-surface-variant">Locked</p>
+</div>
+<!-- C2 Level -->
+<div class="glass-card p-lg rounded-2xl flex flex-col items-center text-center opacity-70">
+<div class="relative w-16 h-16 mb-md">
+<svg class="w-full h-full transform -rotate-90">
+<circle class="text-surface-container-highest" cx="32" cy="32" fill="transparent" r="28" stroke="currentColor" stroke-width="4"></circle>
+</svg>
+<span class="absolute inset-0 flex items-center justify-center font-bold text-on-surface-variant">C2</span>
+</div>
+<h3 class="font-title-lg text-title-lg mb-xs text-on-surface-variant">Proficiency</h3>
+<p class="text-caption font-caption text-on-surface-variant">Locked</p>
+</div>
+</div>
+</section>
+<!-- Immersive Lesson View -->
+<section class="max-w-5xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-4 gap-xl">
+<!-- Main Reading Content (3/4) -->
+<div class="lg:col-span-3 space-y-lg">
+<div class="relative h-[400px] rounded-3xl overflow-hidden mb-xl">
+<div class="w-full h-full bg-cover bg-center" data-alt="A cinematic, high-angle shot of a minimalist board room with large floor-to-ceiling windows overlooking a sleek, futuristic city skyline at dawn. The interior is characterized by a long, polished obsidian table surrounded by high-backed ergonomic chairs. The color palette is composed of deep navy, slate gray, and soft amber light from the rising sun. The image evokes leadership, high-stakes decision-making, and professional excellence." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD2WQGde0DVr6mDN8mDLKvx6fp5fEQOJC-ZMQWcgV6VKhegG2P8xLTCUzNq8fzhZL8fCyMHvOE_IjrvAgN3N6cucwwQiMAJiXLWY4DxeOZzClcfDzZEJ1ufnxc_EM_l_zTcOc6mCGCKUmEFqmqoSNeLc3P8Tu6fEgV179CRfG19wb04wOLxCvrFk9JaxIOaCYXInPZMJNHtlRes01O70-VXujJCBYOLsSGFj4x-H5Xn2VgtQs2h2wAoig')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex flex-col justify-end p-xl">
+<div class="flex gap-sm mb-sm">
+<span class="bg-secondary-container text-on-secondary-container px-sm py-1 rounded text-caption font-label-md">READING</span>
+<span class="bg-surface-container-high/20 backdrop-blur text-white px-sm py-1 rounded text-caption font-label-md">15 MINS</span>
+</div>
+<h2 class="text-display-lg text-white font-display-lg leading-tight">Executive Leadership: Navigating Modern Corporate Complexity</h2>
+</div>
+</div>
+<!-- Audio Player -->
+<div class="glass-card p-md rounded-2xl flex items-center gap-lg border-primary/10">
+<button class="w-12 h-12 bg-primary text-on-primary rounded-full flex items-center justify-center hover:scale-105 transition-transform">
+<span class="material-symbols-outlined">play_arrow</span>
+</button>
+<div class="flex-1">
+<div class="flex justify-between text-caption font-label-md mb-1">
+<span class="">Listen to Article</span>
+<span class="">02:45 / 08:12</span>
+</div>
+<div class="h-2 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary w-1/3 rounded-full"></div>
+</div>
+</div>
+<div class="flex items-center gap-sm">
+<button class="p-xs hover:bg-surface-container-high rounded"><span class="material-symbols-outlined">settings</span></button>
+<button class="p-xs hover:bg-surface-container-high rounded"><span class="material-symbols-outlined">download</span></button>
+</div>
+</div>
+<!-- Reading Article -->
+<article class="prose prose-lg max-w-none text-on-surface-variant font-body-lg leading-relaxed">
+<p class="mb-lg">
+                            In the rapidly evolving landscape of global commerce, <span class="bg-secondary-container/30 border-b-2 border-secondary font-bold text-primary cursor-pointer hover:bg-secondary-container/50 transition-colors px-1" title="To lead or manage something efficiently">steering</span> a multinational corporation requires more than just traditional management expertise. Executive leadership in the 21st century demands a sophisticated blend of <strong>emotional intelligence</strong>, strategic foresight, and the ability to articulate complex visions across diverse cultural barriers.
+                        </p>
+<p class="mb-lg">
+                            The <span class="bg-secondary-container/30 border-b-2 border-secondary font-bold text-primary cursor-pointer hover:bg-secondary-container/50 transition-colors px-1" title="The basic structure or system">infrastructure</span> of decision-making has shifted. Leaders are no longer insulated by layers of middle management; instead, they must operate within a "glass box" environment where every <span class="bg-secondary-container/30 border-b-2 border-secondary font-bold text-primary cursor-pointer hover:bg-secondary-container/50 transition-colors px-1" title="The result or effect of an action">outcome</span> is scrutinized by stakeholders, from institutional investors to the individual consumer on social media.
+                        </p>
+<blockquote class="border-l-4 border-secondary pl-lg italic my-2xl text-headline-sm font-headline-sm text-primary">
+                            "The greatest leaders are not those who command authority, but those who foster a culture of transparent accountability."
+                        </blockquote>
+<p class="mb-lg">
+                            To maintain a competitive edge, executives must master the art of <strong>agile adaptation</strong>. This involve not only responding to market fluctuations but also preemptively identifying shifts in geopolitical climates and technological disruptions. Linguistic precision in these high-stakes environments is paramount, where the misuse of a single term can have profound legal and financial <span class="bg-secondary-container/30 border-b-2 border-secondary font-bold text-primary cursor-pointer hover:bg-secondary-container/50 transition-colors px-1" title="Likely consequences of an action">ramifications</span>.
+                        </p>
+</article>
+<!-- AI Quiz Section -->
+<section class="mt-3xl glass-card rounded-3xl p-xl border-t-4 border-primary">
+<div class="flex items-center gap-md mb-xl">
+<div class="w-12 h-12 bg-primary-container rounded-xl flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined">smart_toy</span>
+</div>
+<div>
+<h3 class="text-headline-sm font-headline-sm text-primary">AI Lesson Mastery Quiz</h3>
+<p class="text-label-md font-label-md text-on-surface-variant">Check your comprehension of the core concepts.</p>
+</div>
+</div>
+<div class="space-y-xl">
+<div class="space-y-md">
+<p class="text-body-lg font-bold text-primary">1. According to the text, what defines the "glass box" environment for modern leaders?</p>
+<div class="grid grid-cols-1 gap-sm">
+<label class="flex items-center p-md rounded-xl border-2 border-surface-container-highest hover:border-secondary cursor-pointer transition-all">
+<input class="w-5 h-5 text-secondary border-outline focus:ring-secondary mr-md" name="q1" type="radio">
+<span class="text-body-md">Highly insulated corporate offices in urban centers</span>
+</label>
+<label class="flex items-center p-md rounded-xl border-2 border-primary bg-primary/5 cursor-pointer transition-all">
+<input checked="" class="w-5 h-5 text-secondary border-outline focus:ring-secondary mr-md" name="q1" type="radio">
+<span class="text-body-md">Increased transparency and stakeholder scrutiny</span>
+</label>
+<label class="flex items-center p-md rounded-xl border-2 border-surface-container-highest hover:border-secondary cursor-pointer transition-all">
+<input class="w-5 h-5 text-secondary border-outline focus:ring-secondary mr-md" name="q1" type="radio">
+<span class="text-body-md">The literal use of glass architecture in HQ design</span>
+</label>
+</div>
+</div>
+<div class="flex justify-between items-center pt-lg border-t border-outline-variant">
+<p class="text-label-md text-on-surface-variant">Question 1 of 5</p>
+<button class="bg-primary text-on-primary px-2xl py-md rounded-full font-label-md hover:bg-opacity-90 active:scale-95 transition-all">Submit &amp; Next</button>
+</div>
+</div>
+</section>
+</div>
+<!-- Sidebar (1/4) -->
+<aside class="space-y-lg lg:sticky lg:top-24 h-fit">
+<!-- Vocabulary Sidebar -->
+<div class="glass-card rounded-2xl p-lg">
+<h4 class="font-headline-sm text-title-lg text-primary mb-md flex items-center gap-sm">
+<span class="material-symbols-outlined text-secondary">menu_book</span>
+                            Key Vocabulary
+                        </h4>
+<div class="space-y-md custom-scrollbar overflow-y-auto max-h-[400px] pr-2">
+<div class="p-sm rounded-lg hover:bg-surface-container-high transition-colors group">
+<div class="flex justify-between items-start mb-1">
+<p class="font-bold text-primary group-hover:text-secondary">Steering</p>
+<span class="text-[10px] uppercase bg-surface-container-highest px-1 rounded text-on-surface-variant">Verb</span>
+</div>
+<p class="text-caption leading-tight text-on-surface-variant">To guide, control, or manage the direction of an organization or process.</p>
+</div>
+<div class="p-sm rounded-lg hover:bg-surface-container-high transition-colors group">
+<div class="flex justify-between items-start mb-1">
+<p class="font-bold text-primary group-hover:text-secondary">Infrastructure</p>
+<span class="text-[10px] uppercase bg-surface-container-highest px-1 rounded text-on-surface-variant">Noun</span>
+</div>
+<p class="text-caption leading-tight text-on-surface-variant">The basic underlying framework or features of a system or organization.</p>
+</div>
+<div class="p-sm rounded-lg hover:bg-surface-container-high transition-colors group">
+<div class="flex justify-between items-start mb-1">
+<p class="font-bold text-primary group-hover:text-secondary">Ramifications</p>
+<span class="text-[10px] uppercase bg-surface-container-highest px-1 rounded text-on-surface-variant">Noun</span>
+</div>
+<p class="text-caption leading-tight text-on-surface-variant">Consequences or complex results, especially one that is unwelcome.</p>
+</div>
+<div class="p-sm rounded-lg hover:bg-surface-container-high transition-colors group">
+<div class="flex justify-between items-start mb-1">
+<p class="font-bold text-primary group-hover:text-secondary">Agile</p>
+<span class="text-[10px] uppercase bg-surface-container-highest px-1 rounded text-on-surface-variant">Adj</span>
+</div>
+<p class="text-caption leading-tight text-on-surface-variant">Able to move quickly and easily; flexible in response to changes.</p>
+</div>
+</div>
+<button class="w-full mt-lg py-sm border border-outline-variant rounded-xl font-label-md text-label-md hover:bg-surface-container-high transition-all">Add all to Flashcards</button>
+</div>
+<!-- Progress/Next Up -->
+<div class="bg-primary text-on-primary rounded-2xl p-lg">
+<h4 class="font-label-md text-label-md text-on-primary-container mb-md uppercase tracking-wider">Lesson Progress</h4>
+<div class="flex items-center gap-md mb-xl">
+<div class="flex-1">
+<div class="h-2 bg-white/10 rounded-full">
+<div class="h-full bg-secondary-fixed w-2/3 rounded-full"></div>
+</div>
+</div>
+<span class="font-bold">66%</span>
+</div>
+<div class="space-y-md">
+<p class="font-label-md text-on-primary-container text-xs uppercase">Up Next</p>
+<div class="flex items-start gap-sm">
+<div class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined">forum</span>
+</div>
+<div class="flex-1">
+<p class="text-label-md font-bold leading-tight">Speaking Lab: Corporate Narratives</p>
+<p class="text-caption opacity-70">Interactive Video Session</p>
+</div>
+</div>
+</div>
+</div>
+</aside>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary text-on-primary w-full mt-3xl">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-lg py-xl max-w-container-max mx-auto">
+<div class="mb-lg md:mb-0">
+<span class="font-title-lg text-title-lg text-on-primary block mb-1">Business English Pro</span>
+<p class="font-caption text-caption text-on-primary/70">© 2024 Business English Pro. Enterprise Edition.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-xl">
+<a class="font-caption text-caption text-on-primary/70 hover:text-on-primary transition-opacity underline-offset-4 hover:underline" href="#">Privacy Policy</a>
+<a class="font-caption text-caption text-on-primary/70 hover:text-on-primary transition-opacity underline-offset-4 hover:underline" href="#">Terms of Service</a>
+<a class="font-caption text-caption text-on-primary/70 hover:text-on-primary transition-opacity underline-offset-4 hover:underline" href="#">Corporate Compliance</a>
+<a class="font-caption text-caption text-on-primary/70 hover:text-on-primary transition-opacity underline-offset-4 hover:underline" href="#">Contact Sales</a>
+</div>
+</div>
+</footer>
+<!-- Mobile FAB (Suppressed based on context: Details screen) -->
+<!-- The FAB is suppressed here as per instructions for Details/Transactional screens -->
+<script>
+        // Simple interactivity for vocabulary highlights
+        document.querySelectorAll('article span').forEach(el => {
+            el.addEventListener('mouseenter', () => {
+                // Future: show tooltip
+            });
+        });
+
+        // Smooth scroll for lesson progress
+        window.addEventListener('scroll', () => {
+            const scrollPos = window.scrollY;
+            const header = document.querySelector('header');
+            if (scrollPos > 10) {
+                header.classList.add('shadow-md');
+            } else {
+                header.classList.remove('shadow-md');
+            }
+        });
+    </script>
+
+
+</body></html>
